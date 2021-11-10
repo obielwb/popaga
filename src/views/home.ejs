@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popaga</title>
+</head>
+<body>
+  <%- include('./partials/navbar.ejs') %> 
+  
+  <main id="container">
+    <%- include('./partials/header.ejs') %> 
+    <div id="content">
+      <section id="no-debts">
+        <div class="section-label">
+          <p>Sem Dívidas</p>
+          <button id="add-card">+</button>
+        </div>
+        <% include('./partials/cards.ejs') %> 
+      </section>
+      <section id="outstanding">
+        <div class="section-label">
+          <p>Em aberto</p>
+        </div>
+        <% include('./partials/cards.ejs') %> 
+      </section>
+      <section id="paid">
+        <div class="section-label">
+          <p>Quitado</p>
+        </div>
+        <% include('./partials/cards.ejs') %> 
+      </section>
+      <section id="filed">
+        <div class="section-label">
+          <p>Arquivados</p>
+        </div>
+        <% include('./partials/cards.ejs') %> 
+      </section>
+    </div>
+  </main>
+</body>
+</html>
