@@ -35,7 +35,7 @@ body { font-family: 'SF Pro Display'; }
 
 body { background: var(--bg-color); }
 
-body #container { width: 100%; height: 92.5vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container { width: 100%; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 body #container .column { width: 30%; height: 100%; }
 
@@ -44,6 +44,14 @@ body #container .about, body #container .continue { display: -webkit-box; displa
 body #container .about #container-logo { font-size: 3em; color: var(--accent-color); }
 
 body #container .about #description { width: 70%; font-size: 2em; color: var(--alt-text-color); text-align: center; margin-top: 20px; }
+
+body #container .about #description #open-source-anchor { text-decoration: none; color: var(--accent-color); -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+body #container .about #description #open-source-anchor:visited { color: var(--accent-color); }
+
+body #container .about #description #open-source-anchor:hover, body #container .about #description #open-source-anchor:active { color: var(--accent-color-hover); }
+
+body #container .about .fa-github { font-size: 3.5em; color: var(--alt-text-color); margin-top: 20px; }
 
 body #container .continue #signup-label { width: 60%; text-align: center; color: var(--alt-text-color); font-size: 1.7em; }
 
@@ -69,8 +77,8 @@ body #container .continue #already-have-an-account a:visited { color: #525252; }
 
 body #container .continue #already-have-an-account a:hover, body #container .continue #already-have-an-account a:active { color: var(--accent-color-hover); }
 
-@media screen and (max-width: 1440px) { body #nav-container { width: 80% !important; }
-  body .column { width: 40% !important; } }
+@media screen and (max-width: 1440px) { #nav-container { width: 80% !important; }
+  .column { width: 40% !important; } }
 
 @media screen and (max-width: 1024px) { #nav-container { width: 90% !important; }
   #container { height: 185vh !important; -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; -ms-flex-direction: column !important; flex-direction: column !important; }
