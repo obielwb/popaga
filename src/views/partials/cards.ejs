@@ -1,10 +1,10 @@
 <div class="cards-container" id>
-  <% if (cards != null) {
-    <% cards.filter((card) => {
-      <% if (card.status == this.parentElement.className) {
+  <% if (cards != null) { %>
+    <% cards.filter((card) => { %>
+      <% if (card.status == this.parentElement.className) { %>
         <div class="card">
           <div class="card-header">
-            <div class="status <% card.status %>"></div>
+            <div class="status <%- card.status %>"></div>
           </div>
 
           <div class="card-content">
@@ -18,15 +18,15 @@
               <p>
                 <%- card.date %>
               </p>
-              <% for (int i = 0; i <= cards.users; i++) {
+              <% for (let i = 0; i <= cards.users; i++) { %>
                 <div class="user">
                   <!-- get the users image and nick-->
                 </div>
-              } %>  
+              <% } %>
             </section>
           </div>
         </div>
-      } %>
-    }) %> 
-  } %> 
+     <% } %>
+    <% }); %>
+  <% } %> 
 </div>
