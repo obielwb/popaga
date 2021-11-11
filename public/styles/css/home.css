@@ -1,0 +1,8 @@
+@font-face { font-family: 'SF Pro Display'; src: url(../../../fonts/sf.ttf); }
+
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+
+html { height: 100%; font-size: 62.5%; }
+
+body { font-family: 'SF Pro Display'; }
+/*# sourceMappingURL=home.css.map */
