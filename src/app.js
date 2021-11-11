@@ -6,6 +6,7 @@ app.set('view engine', 'ejs');
 app.set('views', './src/views');
 
 app.use(express.static('public'));
+app.use('/scripts', express.static('./public/scripts'));
 app.use('/images', express.static('./public/images'));
 app.use('/css', express.static('./public/styles/css'));
 
