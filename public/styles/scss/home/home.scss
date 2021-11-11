@@ -49,7 +49,7 @@ body {
 
     .continue {
       #signup-label {
-        width: 40%;
+        width: 60%;
   
         text-align: center;
   
@@ -94,7 +94,10 @@ body {
         .fa-envelope {
           color: var(--shadow-color);
   
-          margin-left: 15px;
+          width: 20%;
+
+          display: flex;
+          justify-content: center;
         }
   
         #signup-email {
@@ -107,8 +110,7 @@ body {
           outline: none;
   
           background: none;
-  
-          margin-left: 15px;
+
           margin-right: 15px;
   
           font-family: 'SF Pro Display';
@@ -186,21 +188,40 @@ body {
       width: 40% !important;
     }
   }
+}
   
-  @media screen and (max-width: 1024px) {
-    #nav-container {
-      width: 90% !important;
-    }
-  
-    #container {
-      height: 185vh;
-  
-      flex-direction: column !important;
-    }
-  
-    .column {
-      width: 90% !important;
-      height: 92.5vh !important;
-    }
-  }  
+@media screen and (max-width: 1024px) {
+  #nav-container {
+    width: 90% !important;
+  }
+
+  #container {
+    height: 185vh !important;
+
+    flex-direction: column !important;
+  }
+
+  .column.continue,
+  .column.about {
+    width: 90% !important;
+    height: 92.5vh !important;
+  }
+
+  #signup-label,
+  #email-input-container,
+  #continue-to-signup-anchor {
+    width: 50% !important;
+  }
+}
+
+@media screen and(max-width: 512px) {
+  #description {
+    width: 100% !important;
+  }
+
+  #signup-label,
+  #email-input-container,
+  #continue-to-signup-anchor {
+    width: 90% !important;
+  }
 }

@@ -7,10 +7,10 @@ email.addEventListener('focus', () => {
 
 email.addEventListener('focusout', () => {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
- 
+
   if (re.test(String(email.value).toLowerCase()))
     anchor.setAttribute('href', `/signup?email=${email.value}`);
 
   else
-    anchor.parentElement.style.border = '2px solid #ee5555';
+    email.parentElement.style.border = '2px solid #ee5555';
 });
