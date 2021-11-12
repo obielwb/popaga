@@ -6,11 +6,9 @@ html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'SF Pro Display'; }
 
-@media (prefers-color-scheme: dark) { :root { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --shadow-color: #fff2; } }
+:root.light { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --shadow-color: #0005; }
 
-@media (prefers-color-scheme: light) { :root { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --shadow-color: #0005; } }
-
-@media (prefers-color-scheme: no-prefence) { :root { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --shadow-color: #0005; } }
+:root.dark { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --shadow-color: #fff2; }
 
 #home-navbar { width: 100%; height: 7.5vh; border-bottom: 2px solid var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -20,22 +18,32 @@ body { font-family: 'SF Pro Display'; }
 
 #home-navbar #nav-container #nav-logo:visited, #home-navbar #nav-container #nav-logo:active { color: var(--text-color); }
 
-#home-navbar #nav-container #login-container { width: 200px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#home-navbar #nav-container #nav-content-container { width: 250px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#home-navbar #nav-container #login-container #nav-signup-anchor, #home-navbar #nav-container #login-container #nav-login-anchor { width: 90px; height: 40px; border-radius: 5px; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; text-decoration: none; font-family: 'SF Pro Display'; font-size: 1.5em; font-weight: bold; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#home-navbar #nav-container #nav-content-container .fa-sun, #home-navbar #nav-container #nav-content-container .fa-moon { font-size: 2.25em; cursor: pointer; }
 
-#home-navbar #nav-container #login-container #nav-signup-anchor { color: var(--text-color); border: 1px solid var(--accent-color); }
+#home-navbar #nav-container #nav-content-container .fa-sun { display: block; color: #ebc311; }
 
-#home-navbar #nav-container #login-container #nav-signup-anchor:hover { background: var(--accent-color-hover); color: #fff; }
+#home-navbar #nav-container #nav-content-container .fa-sun.hide { display: none; }
 
-#home-navbar #nav-container #login-container #nav-login-anchor { background: var(--accent-color); color: #fff; }
+#home-navbar #nav-container #nav-content-container .fa-moon { display: block; color: #ebaa11; }
 
-#home-navbar #nav-container #login-container #nav-login-anchor:hover { background: var(--accent-color-hover); }
+#home-navbar #nav-container #nav-content-container .fa-moon.hide { display: none; }
 
-@media screen and (max-width: 768px) { #nav-container { -webkit-box-pack: center !important; -ms-flex-pack: center !important; justify-content: center !important; }
-  #login-container { display: none !important; } }
+#home-navbar #nav-container #nav-content-container #nav-signup-anchor, #home-navbar #nav-container #nav-content-container #nav-login-anchor { width: 90px; height: 40px; border-radius: 5px; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; text-decoration: none; font-family: 'SF Pro Display'; font-size: 1.5em; font-weight: bold; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body { background: var(--bg-color); }
+#home-navbar #nav-container #nav-content-container #nav-signup-anchor { color: var(--text-color); border: 1px solid var(--accent-color); }
+
+#home-navbar #nav-container #nav-content-container #nav-signup-anchor:hover { background: var(--accent-color-hover); color: #fff; }
+
+#home-navbar #nav-container #nav-content-container #nav-login-anchor { background: var(--accent-color); color: #fff; }
+
+#home-navbar #nav-container #nav-content-container #nav-login-anchor:hover { background: var(--accent-color-hover); }
+
+@media screen and (max-width: 768px) { #nav-content-container { width: 125px !important; }
+  #nav-signup-anchor { display: none !important; } }
+
+body { background: var(--bg-color); -webkit-transition: background 0.25s; transition: background 0.25s; }
 
 body #container { width: 100%; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 

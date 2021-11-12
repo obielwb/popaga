@@ -30,13 +30,40 @@
       }
     }
 
-    #login-container {
-      width: 200px;
+    #nav-content-container {
+      width: 250px;
       height: 100%;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      .fa-sun,
+      .fa-moon {
+        font-size: 2.25em;
+
+        cursor: pointer;
+      }
+
+      .fa-sun {
+        display: block;
+
+        color: #ebc311;
+
+        &.hide {
+          display: none;
+        }
+      }
+
+      .fa-moon {
+        display: block;
+
+        color: #ebaa11;
+
+        &.hide {
+          display: none;
+        }
+      }
 
       #nav-signup-anchor,
       #nav-login-anchor {
@@ -84,10 +111,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  #nav-container {
-    justify-content: center !important;
+  #nav-content-container {
+    width: 125px !important;
   }
-  #login-container {
+
+  #nav-signup-anchor {
     display: none !important;
   }
 }
