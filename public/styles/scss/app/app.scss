@@ -1,6 +1,7 @@
 @import '../global/global';
 @import '../global/nav';
 @import '../global/theme';
+@import '../global/header';
 
 body {
   background-color: var(--alt-bg-color);
@@ -9,7 +10,7 @@ body {
   flex-direction: row;
 
   #container {
-    height: 100%;
+    height: 100vh;
     width: 97vw;
 
     display: flex;
@@ -19,12 +20,45 @@ body {
       display: flex;
       flex-direction: row;
 
+      padding: 5rem 0 0 5rem;
+
       section {
+        font-size: 2.4rem;
+        font-family: 'SF Pro Display';
+        font-weight: bold;
 
-      }
+        color: var(--title-color);     
+        
+        height: 90%;
+        width: 20%;
 
-      section#no-debts {
+        margin-right: 5%;
 
+        .section-label {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          #add-card {
+            width: 3rem;
+            height: 3rem;
+  
+            cursor: pointer;
+  
+            border: none;
+            border-radius: 1rem;
+  
+            color: white;
+  
+            background-color: var(--accent-color);
+  
+            transition: background 0.5s;
+  
+            &:hover {
+              background-color: var(--accent-color-hover);
+            }
+          }
+        }
       }
     }
   }
