@@ -33,13 +33,15 @@ themes.forEach(theme => {
 });
 
 window.addEventListener('load', () => {
-  if (localStorage.getItem('theme') == null)
-    localStorage.setItem('theme', 'light');
+  if (localStorage.getItem('theme') == null || 
+      localStorage.getItem('theme') != 'light' && 
+      localStorage.getItem('theme') != 'dark')
+        localStorage.setItem('theme', 'light');
 
   const theme = localStorage.getItem('theme');
 
   reference[theme].classList.add('hide');
-  
+
   root.classList.toggle(theme);
   favicon.href = `/images/favicons/${theme}.svg`;
 });
