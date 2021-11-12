@@ -1,1 +1,31 @@
 @import '../global/global';
+@import '../global/nav';
+@import '../global/theme';
+
+body {
+  background-color: var(--alt-bg-color);
+  
+  display: flex;
+  flex-direction: row;
+
+  #container {
+    height: 100%;
+    width: 97vw;
+
+    display: flex;
+    flex-direction: column;
+
+    #content {
+      display: flex;
+      flex-direction: row;
+
+      section {
+
+      }
+
+      section#no-debts {
+
+      }
+    }
+  }
+}
