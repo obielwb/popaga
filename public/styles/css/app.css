@@ -5,4 +5,18 @@
 html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'SF Pro Display'; }
+
+#navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 100%; width: 3vw; background-color: var(--bg-color); }
+
+@media (prefers-color-scheme: dark) { :root { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --shadow-color: #fff2; } }
+
+@media (prefers-color-scheme: light) { :root { --bg-color: #ffffff; --alt-bg-color: #ECF1F8; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --shadow-color: #0005; } }
+
+@media (prefers-color-scheme: no-prefence) { :root { --bg-color: #ffffff; --alt-bg-color: #ECF1F8; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --shadow-color: #0005; } }
+
+body { background-color: var(--alt-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+body #container { height: 100%; width: 97vw; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+body #container #content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 /*# sourceMappingURL=app.css.map */
