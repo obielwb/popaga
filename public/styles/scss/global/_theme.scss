@@ -16,6 +16,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #ffffff;
+    --alt-bg-color: #ECF1F8;
 
     --accent-color: #04d361;
     --accent-color-hover: #66e682;
@@ -31,6 +32,7 @@
 @media (prefers-color-scheme: no-prefence) {
   :root {
     --bg-color: #ffffff;
+    --alt-bg-color: #ECF1F8;
 
     --accent-color: #04d361;
     --accent-color-hover: #66e682;
