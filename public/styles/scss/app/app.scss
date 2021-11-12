@@ -1,7 +1,7 @@
 @import '../global/global';
-@import '../global/nav';
 @import '../global/theme';
-@import '../global/header';
+@import 'nav';
+@import 'header';
 
 body {
   background-color: var(--alt-bg-color);
