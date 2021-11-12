@@ -17,10 +17,19 @@
   <link rel="icon" />
 </head>
 <body>
-  <%- include('./partials/nav.ejs') %> 
-  
+  <nav id="navbar">
+    <img src="/images/icons/home.svg" alt="Home icon">
+    <img src="/images/icons/payments.svg" alt="Payments icon">
+  </nav>
+
   <main id="container">
-    <%- include('./partials/header.ejs') %> 
+    <header id="header">
+      <a id="nav-logo" href="/app">PóPaga <i class="fas fa-piggy-bank"></i></a>
+      <div id="themes-container">
+        <i id="light" class="fas fa-sun"></i>
+        <i id="dark" class="fas fa-moon"></i>
+      </div>
+    </header>
     <div id="content">
       <section id="no-debts">
         <div class="section-label">
