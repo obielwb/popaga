@@ -6,7 +6,7 @@ html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'SF Pro Display'; }
 
-@media (prefers-color-scheme: dark) { :root { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --shadow-color: #fff5; } }
+@media (prefers-color-scheme: dark) { :root { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --shadow-color: #fff2; } }
 
 @media (prefers-color-scheme: light) { :root { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --shadow-color: #0005; } }
 
@@ -52,9 +52,9 @@ body #container #signup-container #signup-form .text-input-container #signup-use
 
 body #container #signup-container #signup-form #avatar-related-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 15px; position: relative; width: 75%; height: 30%; }
 
-body #container #signup-container #signup-form #avatar-related-container #file-input-container { width: 64px; height: 64px; outline: none; border-radius: 100%; border: 5px dashed var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
+body #container #signup-container #signup-form #avatar-related-container #file-input-container { width: 64px; height: 64px; outline: none; border-radius: 100%; border: 5px dashed #525252; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
 
-body #container #signup-container #signup-form #avatar-related-container #file-input-container .fa-folder-plus { color: var(--shadow-color); font-size: 24px; }
+body #container #signup-container #signup-form #avatar-related-container #file-input-container .fa-folder-plus { color: #525252; font-size: 24px; }
 
 body #container #signup-container #signup-form #avatar-related-container #file-input-container #avatar-file-input { height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer; }
 
@@ -64,13 +64,15 @@ body #container #signup-container #signup-form #avatar-related-container #avatar
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #avatar-preview { width: 64px; height: 64px; border-radius: 100%; display: none; }
 
-body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button { bottom: 0; right: 0; display: none; }
+body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button { position: absolute; top: 5%; right: 5%; background: none; border: none; outline: none; font-size: 4em; font-weight: bold; cursor: pointer; color: #525252; -webkit-transition: color 0.5s; transition: color 0.5s; bottom: 0; right: 0; display: none; }
+
+body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button:hover { color: #ee5555; }
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container.show #avatar-preview, body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container.show #dismiss-avatar-button { display: block; }
 
-body #container #signup-container #signup-form #avatar-related-container #avatar-label, body #container #signup-container #signup-form #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'SF Pro Display'; font-weight: bold; color: var(--shadow-color); margin-top: 10px; }
+body #container #signup-container #signup-form #avatar-related-container #avatar-label, body #container #signup-container #signup-form #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'SF Pro Display'; font-weight: bold; color: #525252; margin-top: 10px; }
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-label.hide { display: none; }
 

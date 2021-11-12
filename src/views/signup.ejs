@@ -38,12 +38,13 @@
         </div>
         <div id="avatar-related-container">
           <div id="file-input-container">
-            <input id="avatar-file-input" class="file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp" />
+            <input id="avatar-filename" type="hidden" name="avatar"/>
+            <input id="avatar-file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp" />
             <i class="fas fa-folder-plus"></i>
           </div>
           <div id="avatar-preview-container">
             <img id="avatar-preview">
-            <button class="close-button" id="dismiss-avatar-button">
+            <button id="dismiss-avatar-button">
               &times;
             </button>
           </div>

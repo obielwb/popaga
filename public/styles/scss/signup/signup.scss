@@ -161,7 +161,7 @@ body {
             outline: none;
             
             border-radius: 100%;
-            border: 5px dashed var(--shadow-color);
+            border: 5px dashed #525252;
 
             display: flex;
             align-items: center;
@@ -176,7 +176,7 @@ body {
             cursor: pointer;
 
             .fa-folder-plus {
-              color: var(--shadow-color);
+              color: #525252;
 
               font-size: 24px;
             }
@@ -217,10 +217,31 @@ body {
             }
 
             #dismiss-avatar-button {
+              position: absolute;
+              top: 5%;
+              right: 5%;
+
+              background: none;
+              border: none;
+              outline: none;
+
+              font-size: 4em;
+              font-weight: bold;
+        
+              cursor: pointer;
+        
+              color: #525252;
+
+              transition: color 0.5s;
+
               bottom: 0;
               right: 0;
 
               display: none;
+
+              &:hover {
+                color: #ee5555;
+              }
             }
           }
 
@@ -239,7 +260,7 @@ body {
             font-family: 'SF Pro Display';
             font-weight: bold;
 
-            color: var(--shadow-color);
+            color: #525252;
 
             margin-top: 10px;
           }
