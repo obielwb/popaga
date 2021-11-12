@@ -89,6 +89,7 @@ dismiss.addEventListener('click', (event) => {
   document.querySelector('#avatar-file-name').classList.remove('show');
 
   file = null;
+  filename.value = 'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png';
 });
 
 submit.addEventListener('click', (event) => {
@@ -107,4 +108,9 @@ submit.addEventListener('click', (event) => {
 
   if (filename.value == '' || filename.value == null || filename.value == undefined)
     filename.value = 'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png'
+
+  /* else
+    var url = window.URL.createObjectURL(file);
+    console.log(url)
+    filename.value = url; */
 });
