@@ -1,0 +1,66 @@
+@font-face { font-family: 'SF Pro Display'; src: url(../../../fonts/sf.ttf); }
+
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+
+html { height: 100%; font-size: 62.5%; }
+
+body { font-family: 'SF Pro Display'; }
+
+@media (prefers-color-scheme: dark) { :root { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --shadow-color: #fff5; } }
+
+@media (prefers-color-scheme: light) { :root { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --shadow-color: #0005; } }
+
+@media (prefers-color-scheme: no-prefence) { :root { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --shadow-color: #0005; } }
+
+#login-navbar { width: 100%; height: 7.5vh; border-bottom: 2px solid var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#login-navbar #nav-container { width: 60%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+#login-navbar #nav-container #nav-logo { font-size: 2em; font-weight: bold; color: var(--text-color); text-decoration: none; }
+
+#login-navbar #nav-container #nav-logo:visited, #login-navbar #nav-container #nav-logo:active { color: var(--text-color); }
+
+#login-navbar #nav-container #nav-signup-anchor { width: 90px; height: 40px; border-radius: 5px; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; text-decoration: none; font-family: 'SF Pro Display'; font-size: 1.5em; font-weight: bold; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: var(--text-color); border: 1px solid var(--accent-color); }
+
+#login-navbar #nav-container #nav-signup-anchor:hover { background: var(--accent-color-hover); color: #fff; }
+
+@media screen and (max-width: 512px) { #nav-container { width: 90% !important; } }
+
+body { background: var(--bg-color); }
+
+body #container { width: 100%; height: 92.5vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+body #container #login-container { min-width: 325px; height: 50vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+body #container #login-container #warning { width: 90%; height: 70px; background: #491919c7; border: 2px solid #ee5555; border-radius: 7.5px; margin-bottom: 20px; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #ffffff; font-size: 1.5em; font-family: 'SF Pro Display'; font-weight: bold; text-align: center; }
+
+body #container #login-container #warning.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+body #container #login-container #warning p { width: 75%; }
+
+body #container #login-container #login-label { width: 100%; text-align: center; color: var(--alt-text-color); font-size: 1.7em; }
+
+body #container #login-container #login-label b { width: 150%; height: 150%; background: var(--bold-bg-color); color: var(--accent-color); border-radius: 3px; }
+
+body #container #login-container #login-form { width: 100%; height: 40%; min-height: 200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+
+body #container #login-container #login-form .text-input-container { width: 90%; height: 50px; min-height: 30px; color: var(--text-color); background: none; border: 2px solid var(--shadow-color); border-radius: 7.5px; font-size: 1.7em; padding: 5px; margin-top: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-transition: border 0.5s; transition: border 0.5s; }
+
+body #container #login-container #login-form .text-input-container .fa-envelope, body #container #login-container #login-form .text-input-container .fa-key { color: var(--shadow-color); width: 15%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+body #container #login-container #login-form .text-input-container #login-email, body #container #login-container #login-form .text-input-container #login-password { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-right: 15px; font-family: 'SF Pro Display'; font-size: 1em; }
+
+body #container #login-container #login-form #login-submit { width: 90%; height: 50px; min-height: 30px; border: none; outline: none; border-radius: 7.5px; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 10px; cursor: pointer; }
+
+body #container #login-container #login-form #login-submit:hover { background: var(--accent-color-hover); }
+
+body #container #login-container #login-form #login-submit .fa-sign-in-alt { margin-left: 5px; }
+
+body #container #login-container #dont-have-an-account-yet { margin-top: 10px; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
+
+body #container #login-container #dont-have-an-account-yet a { color: #525252; margin-left: 5px; -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+body #container #login-container #dont-have-an-account-yet a:visited { color: #525252; }
+
+body #container #login-container #dont-have-an-account-yet a:hover, body #container #login-container #dont-have-an-account-yet a:active { color: var(--accent-color-hover); }
+/*# sourceMappingURL=login.css.map */

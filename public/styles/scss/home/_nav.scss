@@ -18,8 +18,16 @@
 
     #nav-logo {
       font-size: 2em;
+      font-weight: bold;
 
       color: var(--text-color);
+
+      text-decoration: none;
+
+      &:visited,
+      &:active {
+        color: var(--text-color);
+      }
     }
 
     #login-container {
@@ -47,7 +55,7 @@
 
         display: flex;
         align-items: center;
-        justify-content: center;      
+        justify-content: center;
       }
 
       #nav-signup-anchor {

@@ -16,7 +16,9 @@ body { font-family: 'SF Pro Display'; }
 
 #home-navbar #nav-container { width: 60%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#home-navbar #nav-container #nav-logo { font-size: 2em; color: var(--text-color); }
+#home-navbar #nav-container #nav-logo { font-size: 2em; font-weight: bold; color: var(--text-color); text-decoration: none; }
+
+#home-navbar #nav-container #nav-logo:visited, #home-navbar #nav-container #nav-logo:active { color: var(--text-color); }
 
 #home-navbar #nav-container #login-container { width: 200px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -57,11 +59,11 @@ body #container .continue #signup-label { width: 60%; text-align: center; color:
 
 body #container .continue #signup-label b { width: 150%; height: 150%; background: var(--bold-bg-color); color: var(--accent-color); border-radius: 3px; }
 
-body #container .continue #email-input-container { width: 60%; height: 50px; color: var(--text-color); background: none; border: 2px solid var(--shadow-color); border-radius: 7.5px; font-size: 1.8em; padding: 5px; margin-top: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-transition: border 0.5s; transition: border 0.5s; }
+body #container .continue #email-input-container { width: 60%; height: 50px; color: var(--text-color); background: none; border: 2px solid var(--shadow-color); border-radius: 7.5px; font-size: 1.7em; padding: 5px; margin-top: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-transition: border 0.5s; transition: border 0.5s; }
 
-body #container .continue #email-input-container .fa-envelope { color: var(--shadow-color); width: 20%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container .continue #email-input-container .fa-envelope { color: var(--shadow-color); width: 15%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container .continue #email-input-container #signup-email { width: 80%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-right: 15px; font-family: 'SF Pro Display'; font-size: 1em; }
+body #container .continue #email-input-container #signup-email { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-right: 15px; font-family: 'SF Pro Display'; font-size: 1em; }
 
 body #container .continue #continue-to-signup-anchor { width: 60%; height: 50px; color: #fff; background: var(--accent-color); border-radius: 7.5px; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; text-decoration: none; margin-top: 10px; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: background 0.5s; transition: background 0.5s; }
 
