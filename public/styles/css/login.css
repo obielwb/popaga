@@ -10,29 +10,29 @@ body { font-family: 'SF Pro Display'; }
 
 :root.dark { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --shadow-color: #fff2; }
 
-#login-navbar { width: 100%; height: 7.5vh; border-bottom: 2px solid var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#navbar { width: 100%; height: 7.5vh; border-bottom: 2px solid var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#login-navbar #nav-container { width: 60%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#navbar #nav-container { width: 60%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#login-navbar #nav-container #nav-logo { font-size: 2em; font-weight: bold; color: var(--text-color); text-decoration: none; }
+#navbar #nav-container #nav-logo { font-size: 2em; font-weight: bold; color: var(--text-color); text-decoration: none; }
 
-#login-navbar #nav-container #nav-logo:visited, #login-navbar #nav-container #nav-logo:active { color: var(--text-color); }
+#navbar #nav-container #nav-logo:visited, #navbar #nav-container #nav-logo:active { color: var(--text-color); }
 
-#login-navbar #nav-container #nav-content-container { width: 125px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#navbar #nav-container #nav-content-container { width: 125px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#login-navbar #nav-container #nav-content-container .fa-sun, #login-navbar #nav-container #nav-content-container .fa-moon { font-size: 2.25em; cursor: pointer; }
+#navbar #nav-container #nav-content-container .fa-sun, #navbar #nav-container #nav-content-container .fa-moon { font-size: 2.25em; cursor: pointer; }
 
-#login-navbar #nav-container #nav-content-container .fa-sun { display: block; color: #ebc311; }
+#navbar #nav-container #nav-content-container .fa-sun { display: block; color: #ebc311; }
 
-#login-navbar #nav-container #nav-content-container .fa-sun.hide { display: none; }
+#navbar #nav-container #nav-content-container .fa-sun.hide { display: none; }
 
-#login-navbar #nav-container #nav-content-container .fa-moon { display: block; color: #ebaa11; }
+#navbar #nav-container #nav-content-container .fa-moon { display: block; color: #ebaa11; }
 
-#login-navbar #nav-container #nav-content-container .fa-moon.hide { display: none; }
+#navbar #nav-container #nav-content-container .fa-moon.hide { display: none; }
 
-#login-navbar #nav-container #nav-content-container #nav-signup-anchor { width: 90px; height: 40px; border-radius: 5px; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; text-decoration: none; font-family: 'SF Pro Display'; font-size: 1.5em; font-weight: bold; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: var(--text-color); border: 1px solid var(--accent-color); }
+#navbar #nav-container #nav-content-container #nav-signup-anchor { width: 90px; height: 40px; border-radius: 5px; -webkit-transition: background 0.5s, color 0.5s; transition: background 0.5s, color 0.5s; text-decoration: none; font-family: 'SF Pro Display'; font-size: 1.5em; font-weight: bold; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: var(--text-color); border: 1px solid var(--accent-color); }
 
-#login-navbar #nav-container #nav-content-container #nav-signup-anchor:hover { background: var(--accent-color-hover); color: #fff; }
+#navbar #nav-container #nav-content-container #nav-signup-anchor:hover { background: var(--accent-color-hover); color: #fff; }
 
 @media screen and (max-width: 512px) { #nav-container { width: 90% !important; } }
 
