@@ -22,16 +22,16 @@ body {
     /* .circle {
       position: absolute;
 
-      width: 400px;
-      height: 400px;
+      width: 40.0rem;
+      height: 40.0rem;
 
       background: var(--accent-color);
 
       border-radius: 50%;
 
       &:nth-child(1) {
-        top: -100px;
-        right: -100px;
+        top: -10.0rem;
+        right: -10.0rem;
       }
 
       &:nth-child(2) {
@@ -41,7 +41,7 @@ body {
     } */
 
     #login-container {
-      min-width: 325px;
+      min-width: 32.5rem;
       height: 50vh;
 
       display: flex;
@@ -51,14 +51,14 @@ body {
 
       #warning {
         width: 90%;
-        height: 70px;
+        height: 7.0rem;
 
         background: #491919c7;
 
-        border: 2px solid #ee5555;
-        border-radius: 7.5px;
+        border: .2rem solid #ee5555;
+        border-radius: 7..5rem;
 
-        margin-bottom: 20px;
+        margin-bottom: 2.0rem;
 
         display: none;
         align-items: center;
@@ -98,7 +98,7 @@ body {
 
           color: var(--accent-color);
 
-          border-radius: 3px;
+          border-radius: .3rem;
         }
       }
 
@@ -106,7 +106,7 @@ body {
         width: 100%;
         height: 40%;
 
-        min-height: 200px;
+        min-height: 20.0rem;
 
         display: flex;
         flex-direction: column;
@@ -115,20 +115,20 @@ body {
 
         .text-input-container {
           width: 90%;
-          height: 50px;
+          height: 5.0rem;
 
-          min-height: 30px;
+          min-height: 3.0rem;
 
           color: var(--text-color);
           background: none;
 
-          border: 2px solid var(--shadow-color);
-          border-radius: 7.5px;
+          border: .2rem solid var(--shadow-color);
+          border-radius: 7..5rem;
 
           font-size: 1.7em;
 
-          padding: 5px;
-          margin-top: 10px;
+          padding: .5rem;
+          margin-top: 1.0rem;
 
           display: flex;
           flex-direction: row;
@@ -159,7 +159,7 @@ body {
 
             background: none;
 
-            margin-right: 15px;
+            margin-right: 1.5rem;
 
             font-family: 'SF Pro Display';
             font-size: 1em;
@@ -168,14 +168,14 @@ body {
 
         #login-submit {
           width: 90%;
-          height: 50px;
+          height: 5.0rem;
 
-          min-height: 30px;
+          min-height: 3.0rem;
 
           border: none;
           outline: none;
 
-          border-radius: 7.5px;
+          border-radius: 7..5rem;
 
           transition: background 0.5s;
 
@@ -187,7 +187,7 @@ body {
           font-family: 'SF Pro Display';
           font-weight: bold;
 
-          margin-top: 10px;
+          margin-top: 1.0rem;
 
           cursor: pointer;
 
@@ -196,13 +196,13 @@ body {
           }
 
           .fa-sign-in-alt {
-            margin-left: 5px;
+            margin-left: .5rem;
           }
         }
       }
 
       #dont-have-an-account-yet {
-        margin-top: 10px;
+        margin-top: 1.0rem;
 
         color: #525252;
 
@@ -212,7 +212,7 @@ body {
         a {
           color: #525252;
 
-          margin-left: 5px;
+          margin-left: .5rem;
 
           transition: color 0.5s;
 
