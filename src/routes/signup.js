@@ -1,13 +1,10 @@
 const express = require('express');
+
+const SignUpController = require('../controllers/SignUpController');
+
 const router = express.Router();
 
-router.get('', async (req, res) => {
-  const { username, email, password, avatar } = req.query ? req.query : '';
-
-  // if ((username != '' && password != '') || avatar != '')
-    // return res.render('signup', { email: '' });
-
-  return res.render('signup', { email });
-});
+router.get('', SignUpController.get);
+router.post('', SignUpController.post);
 
 module.exports = router;
