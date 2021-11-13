@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PóPaga</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PóPaga</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/login.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/login.css" />
 
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/d67355562c.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/d67355562c.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Favicon -->
-  <link rel="icon" /></head>
-<body>
-  <nav id="navbar">
-    <div id="nav-container">
-      <a id="nav-logo" href="/">PóPaga <i class="fas fa-piggy-bank"></i></a>
-      <div id="nav-content-container">
-        <i id="light" class="fas fa-sun"></i>
-        <i id="dark" class="fas fa-moon"></i>
-        <a href="/signup" id="nav-signup-anchor">Sign Up</a>
+    <!-- Favicon -->
+    <link rel="icon" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="nav-container">
+        <a id="nav-logo" href="/">PóPaga <i class="fas fa-piggy-bank"></i></a>
+        <div id="nav-content-container">
+          <i id="light" class="fas fa-sun"></i>
+          <i id="dark" class="fas fa-moon"></i>
+          <a href="/signup" id="nav-signup-anchor">Sign Up</a>
+        </div>
       </div>
+    </nav>
+    <div id="container">
+      <!-- <div class="circle"></div> -->
+      <div id="login-container">
+        <div id="warning"></div>
+        <h2 id="login-label">
+          Bem vindo de volta!<br />Insira <b>seus dados</b> para continuar:
+        </h2>
+        <form id="login-form">
+          <div class="text-input-container">
+            <i class="far fa-envelope"></i>
+            <input
+              id="login-email"
+              type="text"
+              autocomplete="off"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
+          <div class="text-input-container">
+            <i class="fas fa-key"></i>
+            <input
+              id="login-password"
+              type="password"
+              autocomplete="off"
+              placeholder="Senha"
+              name="password"
+            />
+          </div>
+          <button id="login-submit" type="submit">
+            Login <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </form>
+        <p id="dont-have-an-account-yet">
+          Ainda não tem uma conta?<a href="/signup">Sign Up!</a>
+        </p>
+      </div>
+      <!-- <div class="circle"></div> -->
     </div>
-  </nav>
-  <div id="container">
-    <div id="login-container">
-      <div id="warning"></div>
-      <h2 id="login-label">Bem vindo de volta!<br>Insira  <b>seus dados</b>  para continuar:</h2>
-      <form id="login-form">
-        <div class="text-input-container">
-          <i class="far fa-envelope"></i>
-          <input id="login-email" type="text" autocomplete="off" placeholder="Email" name="email"/>
-        </div>
-        <div class="text-input-container">
-          <i class="fas fa-key"></i>
-          <input id="login-password" type="password" autocomplete="off" placeholder="Senha" name="password"/>
-        </div>
-        <button id="login-submit" type="submit">Login <i class="fas fa-sign-in-alt"></i></button>
-      </form>
-      <p id="dont-have-an-account-yet">Ainda não tem uma conta?<a href="/signup">Sign Up!</a></p>
-    </div>
-  </div>
-  <script src="/scripts/login.js"></script>
-  <script src="/scripts/theme.js"></script>
-</body>
+    <script src="/scripts/login.js"></script>
+    <script src="/scripts/theme.js"></script>
+  </body>
 </html>
