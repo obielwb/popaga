@@ -10,11 +10,11 @@ body { font-family: 'SF Pro Display'; }
 
 :root.dark { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --shadow-color: #fff2; }
 
-#navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100vh; width: 4vw; background-color: var(--bg-color); }
+#navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100vh; width: 4vw; background-color: var(--bg-color); -webkit-transition: background 0.5s; transition: background 0.5s; }
 
 #navbar img { width: 60%; margin-top: 3rem; }
 
-#header { width: 100%; height: 5%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; background-color: var(--accent-color); padding: 4rem; }
+#header { width: 100%; height: 5%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; background-color: var(--accent-color); -webkit-transition: background 0.5s; transition: background 0.5s; padding: 4rem; }
 
 #header #nav-logo { font-size: 2em; font-weight: bold; color: var(--text-color); text-decoration: none; }
 
@@ -34,7 +34,7 @@ body { font-family: 'SF Pro Display'; }
 
 @media screen and (max-width: 1080px) { #header { height: 7%; } }
 
-body { background-color: var(--bold-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+body { background-color: var(--bold-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-transition: background 0.5s; transition: background 0.5s; }
 
 body #container { height: 100vh; width: 97vw; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 

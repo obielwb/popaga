@@ -9,6 +9,8 @@ body {
   display: flex;
   flex-direction: row;
 
+  transition: background 0.5s;
+
   #container {
     height: 100vh;
     width: 97vw;
