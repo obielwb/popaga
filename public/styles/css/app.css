@@ -32,7 +32,7 @@ body { font-family: 'SF Pro Display'; }
 
 #header #themes-container .fa-moon.hide { display: none; }
 
-@media screen and (max-width: 1080px) { #header { height: 7%; } }
+@media screen and (max-width: 1080px) { #header { height: 7% !important; } }
 
 body { background-color: var(--bold-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-transition: background 0.5s; transition: background 0.5s; }
 
@@ -40,11 +40,13 @@ body #container { height: 100vh; width: 97vw; display: -webkit-box; display: -ms
 
 body #container #content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; padding: 5rem 0 0 5rem; }
 
-body #container #content section { font-size: 2.4rem; font-family: 'SF Pro Display'; font-weight: bold; color: var(--title-color); height: 90%; width: 20%; margin-right: 5%; }
+body #container #content section { font-size: 2rem; font-family: 'SF Pro Display'; font-weight: bold; color: var(--title-color); height: 90%; width: 20%; margin-right: 5%; }
 
 body #container #content section .section-label { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 body #container #content section .section-label #add-card { width: 3rem; height: 3rem; cursor: pointer; border: none; border-radius: 1rem; color: white; background-color: var(--accent-color); -webkit-transition: background 0.5s; transition: background 0.5s; }
 
 body #container #content section .section-label #add-card:hover { background-color: var(--accent-color-hover); }
+
+@media screen and (min-width: 1500px) { section { font-size: 2.4rem !important; } }
 /*# sourceMappingURL=app.css.map */
