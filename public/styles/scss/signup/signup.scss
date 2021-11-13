@@ -98,7 +98,7 @@ body {
           background: none;
 
           border: .2rem solid var(--shadow-color);
-          border-radius: 7..5rem;
+          border-radius: .75rem;
 
           font-size: 1.7em;
 
@@ -341,5 +341,11 @@ body {
         }
       }
     }
+  }
+}
+
+@media screen and (max-height: 800px) {
+  #signup-container {
+    height: 70vh;
   }
 }
