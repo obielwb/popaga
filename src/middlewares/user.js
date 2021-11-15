@@ -30,12 +30,16 @@ module.exports = (req, res, next) => {
           const { data } = response;
 
           res.locals.user = data;
-        } else res.locals.user = null;
+
+          return next();
+        } else {
+          res.locals.user = null;
+          return next();
+        }
       })
       .catch(() => {
         res.locals.user = null;
+        return next();
       });
   });
-
-  return next();
 };
