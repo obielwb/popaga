@@ -1,3 +1,7 @@
+// TODOS:
+//  - update home page mobile nav
+//  - update login/sign up pages
+//  - fix image update issue
 const express = require('express');
 const app = express();
 
