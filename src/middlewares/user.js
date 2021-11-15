@@ -26,7 +26,7 @@ module.exports = (req, res, next) => {
 
     axios
       .get(
-        `https://ojpbarbosa-cors-everywhere.herokuapp.com/https://popaga-api.herokuapp.com/users/${decoded.id}`,
+        `https://ojpbarbosa-cors-anywhere.herokuapp.com/https://popaga-api.herokuapp.com/users/${decoded.id}`,
         config
       )
       .then((response) => {
