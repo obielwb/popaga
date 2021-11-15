@@ -57,7 +57,7 @@ submit.addEventListener('click', (event) => {
 
     axios
       .post(
-        'https://ojpbarbosa-cors-everywhere.herokuapp.com/https://popaga-api.herokuapp.com/users/auth',
+        'https://ojpbarbosa-cors-anywhere.herokuapp.com/https://popaga-api.herokuapp.com/users/auth',
         user
       )
       .then((response) => {
