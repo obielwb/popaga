@@ -11,17 +11,17 @@
   transition: background 0.5s;
   padding: 4rem;
 
+  color: #ffffff;
+
   #nav-logo {
     font-size: 2em;
     font-weight: bold;
-
-    color: var(--text-color);
 
     text-decoration: none;
 
     &:visited,
     &:active {
-      color: var(--text-color);
+      color: #ffffff;
     }
   }
 
@@ -33,31 +33,46 @@
     align-items: center;
     justify-content: center;
 
-    .fa-sun,
-    .fa-moon {
-      font-size: 2.5em;
+    .theme-button {
+      width: 2.5em;
+      height: 2.5em;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      outline: none;
+      border: none;
+
+      border-radius: 7.5px;
 
       cursor: pointer;
+
+      background: var(--theme-button-bg-color);
+    }
+
+    #light,
+    #dark {
+      &.hide {
+        display: none;
+      }
+    }
+
+    .fa-sun,
+    .fa-moon {
+      font-size: 2em;
     }
 
     .fa-sun {
       display: block;
 
-      color: #ebc311;
-
-      &.hide {
-        display: none;
-      }
+      color: #ece141;
     }
 
     .fa-moon {
       display: block;
 
       color: #ebaa11;
-
-      &.hide {
-        display: none;
-      }
     }
   }
 }

@@ -6,9 +6,9 @@ html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'SF Pro Display'; }
 
-:root.light { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #d6ffe8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --shadow-color: #0005; }
+:root.light { --bg-color: #ffffff; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #ecf1f8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --theme-button-bg-color: #ffffff; --shadow-color: #0005; }
 
-:root.dark { --bg-color: #121212; --accent-color: #8257E5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --shadow-color: #fff2; }
+:root.dark { --bg-color: #121212; --accent-color: #8257e5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --theme-button-bg-color: #28213a; --shadow-color: #fff2; }
 
 #navbar { width: 100%; height: 7.5vh; border-bottom: 2px solid var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -40,9 +40,9 @@ body { background: var(--bg-color); -webkit-transition: background 0.25s; transi
 
 body #container { width: 100%; height: 92.5vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #signup-container { min-width: 325px; height: 50vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #signup-container { min-width: 32.5rem; height: 50vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #signup-container #warning { width: 90%; height: 70px; background: #491919c7; border: 2px solid #ee5555; border-radius: 7.5px; margin-bottom: 20px; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #ffffff; font-size: 1.5em; font-family: 'SF Pro Display'; font-weight: bold; text-align: center; }
+body #container #signup-container #warning { width: 90%; height: 7rem; background: #491919c7; border: 0.2rem solid #ee5555; border-radius: 7.5rem; margin-bottom: 2rem; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #ffffff; font-size: 1.5em; font-family: 'SF Pro Display'; font-weight: bold; text-align: center; }
 
 body #container #signup-container #warning.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -50,21 +50,21 @@ body #container #signup-container #warning p { width: 75%; }
 
 body #container #signup-container #signup-label { width: 100%; text-align: center; color: var(--alt-text-color); font-size: 1.7em; }
 
-body #container #signup-container #signup-label b { width: 150%; height: 150%; background: var(--bold-bg-color); color: var(--accent-color); border-radius: 3px; }
+body #container #signup-container #signup-label b { width: 150%; height: 150%; background: var(--bold-bg-color); color: var(--accent-color); border-radius: 0.3rem; }
 
-body #container #signup-container #signup-form { width: 100%; height: 100%; min-height: 200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+body #container #signup-container #signup-form { width: 100%; height: 100%; min-height: 20rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
 
-body #container #signup-container #signup-form .text-input-container { width: 90%; height: 50px; min-height: 30px; color: var(--text-color); background: none; border: 2px solid var(--shadow-color); border-radius: 7.5px; font-size: 1.7em; padding: 5px; margin-top: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-transition: border 0.5s; transition: border 0.5s; }
+body #container #signup-container #signup-form .text-input-container { width: 90%; height: 5rem; min-height: 3rem; color: var(--text-color); background: none; border: 0.2rem solid var(--shadow-color); border-radius: 0.75rem; font-size: 1.7em; padding: 0.5rem; margin-top: 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-transition: border 0.5s; transition: border 0.5s; }
 
 body #container #signup-container #signup-form .text-input-container .fa-user-circle, body #container #signup-container #signup-form .text-input-container .fa-envelope, body #container #signup-container #signup-form .text-input-container .fa-key { color: var(--shadow-color); width: 15%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #signup-container #signup-form .text-input-container #signup-username, body #container #signup-container #signup-form .text-input-container #signup-email, body #container #signup-container #signup-form .text-input-container #signup-password { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-right: 15px; font-family: 'SF Pro Display'; font-size: 1em; }
+body #container #signup-container #signup-form .text-input-container #signup-username, body #container #signup-container #signup-form .text-input-container #signup-email, body #container #signup-container #signup-form .text-input-container #signup-password { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-right: 1.5rem; font-family: 'SF Pro Display'; font-size: 1em; }
 
-body #container #signup-container #signup-form #avatar-related-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 15px; position: relative; width: 75%; height: 30%; }
+body #container #signup-container #signup-form #avatar-related-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 1.5rem; position: relative; width: 75%; height: 30%; }
 
-body #container #signup-container #signup-form #avatar-related-container #file-input-container { width: 64px; height: 64px; outline: none; border-radius: 100%; border: 5px dashed #525252; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
+body #container #signup-container #signup-form #avatar-related-container #file-input-container { width: 6.4rem; height: 6.4rem; outline: none; border-radius: 100%; border: 0.5rem dashed #525252; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
 
-body #container #signup-container #signup-form #avatar-related-container #file-input-container .fa-folder-plus { color: #525252; font-size: 24px; }
+body #container #signup-container #signup-form #avatar-related-container #file-input-container .fa-folder-plus { color: #525252; font-size: 2.4rem; }
 
 body #container #signup-container #signup-form #avatar-related-container #file-input-container #avatar-file-input { height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer; }
 
@@ -72,7 +72,7 @@ body #container #signup-container #signup-form #avatar-related-container #file-i
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container { width: 50%; height: 100%; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #avatar-preview { width: 64px; height: 64px; border-radius: 100%; display: none; }
+body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #avatar-preview { width: 6.4rem; height: 6.4rem; border-radius: 100%; display: none; }
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button { position: absolute; top: 5%; right: 5%; background: none; border: none; outline: none; font-size: 4em; font-weight: bold; cursor: pointer; color: #525252; -webkit-transition: color 0.5s; transition: color 0.5s; bottom: 0; right: 0; display: none; }
 
@@ -82,7 +82,7 @@ body #container #signup-container #signup-form #avatar-related-container #avatar
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container.show #avatar-preview, body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container.show #dismiss-avatar-button { display: block; }
 
-body #container #signup-container #signup-form #avatar-related-container #avatar-label, body #container #signup-container #signup-form #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'SF Pro Display'; font-weight: bold; color: #525252; margin-top: 10px; }
+body #container #signup-container #signup-form #avatar-related-container #avatar-label, body #container #signup-container #signup-form #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'SF Pro Display'; font-weight: bold; color: #525252; margin-top: 1rem; }
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-label.hide { display: none; }
 
@@ -90,17 +90,19 @@ body #container #signup-container #signup-form #avatar-related-container #avatar
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-file-name.show { display: block; }
 
-body #container #signup-container #signup-form #signup-submit { width: 90%; height: 50px; min-height: 50px; border: none; outline: none; border-radius: 7.5px; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 10px; cursor: pointer; }
+body #container #signup-container #signup-form #signup-submit { width: 90%; height: 5rem; min-height: 5rem; border: none; outline: none; border-radius: 7.5rem; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 1rem; cursor: pointer; }
 
 body #container #signup-container #signup-form #signup-submit:hover { background: var(--accent-color-hover); }
 
-body #container #signup-container #signup-form #signup-submit .fa-sign-in-alt { margin-left: 5px; }
+body #container #signup-container #signup-form #signup-submit .fa-sign-in-alt { margin-left: 0.5rem; }
 
-body #container #signup-container #already-have-an-account { margin-top: 10px; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
+body #container #signup-container #already-have-an-account { margin-top: 1rem; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
 
-body #container #signup-container #already-have-an-account a { color: #525252; margin-left: 5px; -webkit-transition: color 0.5s; transition: color 0.5s; }
+body #container #signup-container #already-have-an-account a { color: #525252; margin-left: 0.5rem; -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 body #container #signup-container #already-have-an-account a:visited { color: #525252; }
 
 body #container #signup-container #already-have-an-account a:hover, body #container #signup-container #already-have-an-account a:active { color: var(--accent-color-hover); }
+
+@media screen and (max-height: 800px) { #signup-container { height: 70vh; } }
 /*# sourceMappingURL=signup.css.map */

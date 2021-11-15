@@ -21,8 +21,13 @@
   </head>
   <body>
     <nav id="navbar">
-      <img src="/images/icons/home.svg" alt="Home icon" />
-      <img src="/images/icons/payments.svg" alt="Payments icon" />
+      <div id="action-buttons-container">
+        <i class="fas fa-th"></i>
+        <i class="fas fa-credit-card"></i>
+      </div>
+      <div id="logout-button-container">
+        <i id="logout" class="fas fa-sign-out-alt"></i>
+      </div>
     </nav>
 
     <main id="container">
@@ -32,31 +37,35 @@
         ></a>
         <h1>Bem vindo, <%= user.username %>.</h1>
         <div id="themes-container">
-          <i id="light" class="fas fa-sun"></i>
-          <i id="dark" class="fas fa-moon"></i>
+          <button id="light" class="theme-button" data-theme="light">
+            <i class="fas fa-sun" data-theme="light"></i>
+          </button>
+          <button id="dark" class="theme-button" data-theme="dark">
+            <i class="fas fa-moon" data-theme="dark"></i>
+          </button>
         </div>
       </header>
       <div id="content">
-        <section id="no-debts">
+        <section id="no-debt">
           <div class="section-label">
             <p>Sem Dívidas</p>
-            <button id="add-card">+</button>
+            <button id="add-card"><i class="fas fa-plus"></i></button>
           </div>
           <%- include('./partials/cards.ejs') %>
         </section>
-        <section id="outstanding">
+        <section id="to-be-paid">
           <div class="section-label">
             <p>Em aberto</p>
           </div>
           <%- include('./partials/cards.ejs') %>
         </section>
-        <section id="paid">
+        <section id="paid-off">
           <div class="section-label">
             <p>Quitado</p>
           </div>
           <%- include('./partials/cards.ejs') %>
         </section>
-        <section id="filed">
+        <section id="archived">
           <div class="section-label">
             <p>Arquivados</p>
           </div>
@@ -65,5 +74,6 @@
       </div>
     </main>
     <script src="/scripts/theme.js"></script>
+    <script src="/scripts/logout.js"></script>
   </body>
 </html>

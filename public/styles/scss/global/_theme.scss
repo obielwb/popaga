@@ -4,11 +4,13 @@
   --accent-color: #04d361;
   --accent-color-hover: #66e682;
 
-  --bold-bg-color: #ECF1F8;
+  --bold-bg-color: #ecf1f8;
 
   --text-color: #000;
   --alt-text-color: #1d1c1c;
   --title-color: #545454;
+
+  --theme-button-bg-color: #ffffff;
 
   --shadow-color: #0005;
 }
@@ -16,7 +18,7 @@
 :root.dark {
   --bg-color: #121212;
 
-  --accent-color: #8257E5;
+  --accent-color: #8257e5;
   --accent-color-hover: #9c7ce6;
 
   --bold-bg-color: #2a2438;
@@ -24,6 +26,8 @@
   --text-color: #ffffff;
   --alt-text-color: #e1e1e1;
   --title-color: #beb7b7;
+
+  --theme-button-bg-color: #28213a;
 
   --shadow-color: #fff2;
 }

@@ -5,7 +5,7 @@
 
 body {
   background-color: var(--bold-bg-color);
-  
+
   display: flex;
   flex-direction: row;
 
@@ -29,8 +29,8 @@ body {
         font-family: 'SF Pro Display';
         font-weight: bold;
 
-        color: var(--title-color);     
-        
+        color: var(--title-color);
+
         height: 90%;
         width: 20%;
 
@@ -44,18 +44,26 @@ body {
           #add-card {
             width: 3rem;
             height: 3rem;
-  
+
             cursor: pointer;
-  
+
             border: none;
             border-radius: 1rem;
-  
+
             color: white;
-  
+
             background-color: var(--accent-color);
-  
+
+            font-size: 0.75em;
+            font-family: 'SF Pro Display';
+            font-weight: bold;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             transition: background 0.5s;
-  
+
             &:hover {
               background-color: var(--accent-color-hover);
             }
