@@ -90,7 +90,7 @@ body #container #signup-container #signup-form #avatar-related-container #avatar
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-file-name.show { display: block; }
 
-body #container #signup-container #signup-form #signup-submit { width: 90%; height: 5rem; min-height: 5rem; border: none; outline: none; border-radius: 7.5rem; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 1rem; cursor: pointer; }
+body #container #signup-container #signup-form #signup-submit { width: 90%; height: 5rem; min-height: 5rem; border: none; outline: none; border-radius: 7.5px; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 1rem; cursor: pointer; }
 
 body #container #signup-container #signup-form #signup-submit:hover { background: var(--accent-color-hover); }
 
