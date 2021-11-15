@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
   if (!session) return next();
 
   verify(session, config.secret, (error, decoded) => {
-    if (error) return res.redirect('/login');
+    if (error) return next();
     return res.redirect('/app');
   });
 };
