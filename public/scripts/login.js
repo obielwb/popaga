@@ -51,6 +51,7 @@ submit.addEventListener('click', (event) => {
     warn('A senha deve ter pelo menos 6 caractres!');
   else {
     const user = {
+      // does not work twice. what?
       email: email.value,
       password: password.value,
     };
