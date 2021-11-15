@@ -1,68 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PóPaga</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PóPaga</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/signup.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/signup.css" />
 
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/d67355562c.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/d67355562c.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Favicon -->
-  <link rel="icon" /></head>
-<body>
-  <nav id="navbar">
-    <div id="nav-container">
-      <a id="nav-logo" href="/">PóPaga <i class="fas fa-piggy-bank"></i></a>
-      <div id="nav-content-container">
-        <i id="light" class="fas fa-sun"></i>
-        <i id="dark" class="fas fa-moon"></i>
-        <a href="/login" id="nav-login-anchor">Login</a>
+    <!-- Favicon -->
+    <link rel="icon" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="nav-container">
+        <a id="nav-logo" href="/">PóPaga <i class="fas fa-piggy-bank"></i></a>
+        <div id="nav-content-container">
+          <i id="light" class="fas fa-sun"></i>
+          <i id="dark" class="fas fa-moon"></i>
+          <a href="/login" id="nav-login-anchor">Login</a>
+        </div>
+      </div>
+    </nav>
+    <div id="container">
+      <div id="signup-container">
+        <div id="warning"></div>
+        <h2 id="signup-label">
+          Bem vindo ao PóPaga.<br />Realize <b>seu cadastro</b> para continuar:
+        </h2>
+        <form id="signup-form">
+          <div class="text-input-container">
+            <i class="fas fa-user-circle"></i>
+            <input
+              id="signup-username"
+              type="text"
+              autocomplete="off"
+              placeholder="Username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="text-input-container">
+            <i class="far fa-envelope"></i>
+            <input
+              id="signup-email"
+              type="email"
+              autocomplete="off"
+              placeholder="Email"
+              value="<%- email %>"
+              name="email"
+              required
+            />
+          </div>
+          <div class="text-input-container">
+            <i class="fas fa-key"></i>
+            <input
+              id="signup-password"
+              type="password"
+              autocomplete="off"
+              placeholder="Senha"
+              name="password"
+              required
+            />
+          </div>
+          <div id="avatar-related-container">
+            <div id="file-input-container">
+              <input id="avatar-filename" type="hidden" name="avatar" />
+              <input
+                id="avatar-file-input"
+                type="file"
+                accept="image/png, image/jpg, image/jpeg, image/bmp"
+              />
+              <i class="fas fa-folder-plus"></i>
+            </div>
+            <div id="avatar-preview-container">
+              <img id="avatar-preview" />
+              <button id="dismiss-avatar-button">&times;</button>
+            </div>
+            <p id="avatar-label">Selecione um avatar!</p>
+            <span id="avatar-file-name"></span>
+          </div>
+          <button id="signup-submit" type="submit">
+            Sign Up <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </form>
+        <p id="already-have-an-account">
+          Já tem uma conta?<a href="/login">Faça login!</a>
+        </p>
       </div>
     </div>
-  </nav>
-  <div id="container">
-    <div id="signup-container">
-      <div id="warning"></div>
-      <h2 id="signup-label">Bem vindo ao PóPaga.<br>Realize <b>seu cadastro</b> para continuar:</h2>
-      <form id="signup-form">
-        <div class="text-input-container">
-          <i class="fas fa-user-circle"></i>
-          <input id="signup-username" type="text" autocomplete="off" placeholder="Username" name="username"/>
-        </div>
-        <div class="text-input-container">
-          <i class="far fa-envelope"></i>
-          <input id="signup-email" type="text" autocomplete="off" placeholder="Email" value="<%- email %>" name="email"/>
-        </div>
-        <div class="text-input-container">
-          <i class="fas fa-key"></i>
-          <input id="signup-password" type="password" autocomplete="off" placeholder="Senha" name="password"/>
-        </div>
-        <div id="avatar-related-container">
-          <div id="file-input-container">
-            <input id="avatar-filename" type="hidden" name="avatar"/>
-            <input id="avatar-file-input" type="file" accept="image/png, image/jpg, image/jpeg, image/bmp" />
-            <i class="fas fa-folder-plus"></i>
-          </div>
-          <div id="avatar-preview-container">
-            <img id="avatar-preview">
-            <button id="dismiss-avatar-button">
-              &times;
-            </button>
-          </div>
-          <p id="avatar-label">Selecione um avatar!</p>
-          <span id="avatar-file-name"></span>
-        </div>
-        <button id="signup-submit" type="submit">Sign Up <i class="fas fa-sign-in-alt"></i></button>
-      </form>
-      <p id="already-have-an-account">Já tem uma conta?<a href="/login">Faça login!</a></p>
-    </div>
-  </div>
-  <script src="/scripts/signup.js"></script>
-  <script src="/scripts/theme.js"></script>
-</body>
+    <script src="/scripts/signup.js"></script>
+    <script src="/scripts/theme.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
 </html>

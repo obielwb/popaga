@@ -41,10 +41,11 @@
             <i class="far fa-envelope"></i>
             <input
               id="login-email"
-              type="text"
+              type="email"
               autocomplete="off"
               placeholder="Email"
               name="email"
+              required
             />
           </div>
           <div class="text-input-container">
@@ -55,6 +56,7 @@
               autocomplete="off"
               placeholder="Senha"
               name="password"
+              required
             />
           </div>
           <button id="login-submit" type="submit">
@@ -69,5 +71,6 @@
     </div>
     <script src="/scripts/login.js"></script>
     <script src="/scripts/theme.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

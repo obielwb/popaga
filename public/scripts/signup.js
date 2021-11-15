@@ -9,7 +9,8 @@ const submit = document.querySelector('#signup-submit');
 const warning = document.querySelector('#warning');
 
 const isValid = (email) => {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   return re.test(String(email.value).toLowerCase());
 };
@@ -21,9 +22,7 @@ username.addEventListener('focus', () => {
 username.addEventListener('focusout', () => {
   if (username.value.length < 2)
     username.parentElement.style.border = '2px solid #ee5555';
-
-  else
-    username.parentElement.style.border = '2px solid var(--accent-color)';
+  else username.parentElement.style.border = '2px solid var(--accent-color)';
 });
 
 email.addEventListener('focus', () => {
@@ -31,11 +30,8 @@ email.addEventListener('focus', () => {
 });
 
 email.addEventListener('focusout', () => {
-  if (!isValid(email))
-    email.parentElement.style.border = '2px solid #ee5555';
-
-  else
-    email.parentElement.style.border = '2px solid var(--accent-color)';
+  if (!isValid(email)) email.parentElement.style.border = '2px solid #ee5555';
+  else email.parentElement.style.border = '2px solid var(--accent-color)';
 });
 
 password.addEventListener('focus', () => {
@@ -75,7 +71,7 @@ avatar.addEventListener('change', (event) => {
     reader.onload = () => {
       filename.value = reader.result;
     };
-  
+
     reader.readAsDataURL(file);
   }
 });
@@ -89,7 +85,8 @@ dismiss.addEventListener('click', (event) => {
   document.querySelector('#avatar-file-name').classList.remove('show');
 
   file = null;
-  filename.value = 'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png';
+  filename.value =
+    'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png';
 });
 
 submit.addEventListener('click', (event) => {
@@ -97,20 +94,36 @@ submit.addEventListener('click', (event) => {
 
   if (username.value == '' || email.value == '' || password.value == '') {
     warning.classList.add('show');
-    warning.innerHTML = '<p>Insira email e senha antes de prosseguir!</p>'
-  }
-
-  else if (username.value.length < 2 || !isValid(email) || password.value.length < 6) {
+    warning.innerHTML = '<p>Insira email e senha antes de prosseguir!</p>';
+  } else if (
+    username.value.length < 2 ||
+    !isValid(email) ||
+    password.value.length < 6
+  ) {
     warning.classList.add('show');
-    warning.innerHTML = '<p>Email e/ou senha inválido(s)! Tente novamente.</p>'
-    event.preventDefault();
+    warning.innerHTML = '<p>Email e/ou senha inválido(s)! Tente novamente.</p>';
+  } else {
+    const user = {
+      username: username.value,
+      email: email.value,
+      password: password.value,
+      avatar: file ? filename.value : null,
+    };
+
+    axios
+      .post(
+        'https://ojpbarbosa-cors-everywhere.herokuapp.com/https://popaga-api.herokuapp.com/users',
+        user
+      )
+      .then((response) => {
+        const { data, status } = response; // TODO: add cases with different status codes,  if (data.error), if (status === 400)
+
+        if (status === 200) {
+          document.cookie = `session=${data.token}; max-age=259200`;
+          location.assign('/app');
+        }
+      });
   }
 
-  if (filename.value == '' || filename.value == null || filename.value == undefined)
-    filename.value = 'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png'
-
-  /* else
-    var url = window.URL.createObjectURL(file);
-    console.log(url)
-    filename.value = url; */
+  event.preventDefault();
 });

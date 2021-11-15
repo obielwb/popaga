@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('', (req, res) => {
+const auth = require('../middlewares/auth');
+const user = require('../middlewares/user');
+
+router.get('', auth, user, (req, res) => {
   return res.render('app', { cards: null });
 });
 

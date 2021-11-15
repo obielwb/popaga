@@ -19,8 +19,11 @@
   "homepage": "https://github.com/obielwb/popaga#readme",
   "dependencies": {
     "axios": "^0.24.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "filestack": "^1.0.2"
+    "filestack": "^1.0.2",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "ejs": "^3.1.6",

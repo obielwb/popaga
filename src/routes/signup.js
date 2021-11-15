@@ -1,10 +1,11 @@
 const express = require('express');
 
-const SignUpController = require('../controllers/SignUpController');
-
 const router = express.Router();
 
-router.get('', SignUpController.get);
-router.post('', SignUpController.post);
+router.get('', (req, res) => {
+  const { email } = req.query ? req.query : '';
+
+  return res.render('signup', { email });
+});
 
 module.exports = router;
