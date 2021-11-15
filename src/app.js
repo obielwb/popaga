@@ -1,6 +1,3 @@
-// TODOS:
-//  - fix sign up issue
-//  - add error handling to api responses
 const express = require('express');
 const app = express();
 
