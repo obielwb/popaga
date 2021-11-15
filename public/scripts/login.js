@@ -56,10 +56,7 @@ submit.addEventListener('click', (event) => {
     };
 
     axios
-      .post(
-        'https://ojpbarbosa-cors-anywhere.herokuapp.com/https://popaga-api.herokuapp.com/users/auth',
-        user
-      )
+      .post('https://popaga-api.herokuapp.com/users/auth', user)
       .then((response) => {
         const { data, status } = response; // TODO: add cases with different status codes
 

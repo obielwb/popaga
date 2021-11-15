@@ -124,16 +124,11 @@ submit.addEventListener('click', (event) => {
     };
 
     axios
-      .post(
-        'https://ojpbarbosa-cors-anywhere.herokuapp.com//https://popaga-api.herokuapp.com/users',
-        user
-      )
+      .post('https://popaga-api.herokuapp.com/users', user)
       .then((response) => {
         const { data, status } = response; // TODO: add cases with different status codes,  if (data.error), if (status === 400)
 
-        console.log(data);
-
-        if (status === 200) {
+        if (status === 201) {
           document.cookie = `session=${data.token}; max-age=259200`;
           location.assign('/app');
         }
