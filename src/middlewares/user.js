@@ -20,15 +20,11 @@ module.exports = (req, res, next) => {
     const config = {
       headers: {
         Authorization: `Bearer ${session}`,
-        'X-Requested-With': 'XMLHttpRequest',
       },
     };
 
     axios
-      .get(
-        `https://ojpbarbosa-cors-anywhere.herokuapp.com/https://popaga-api.herokuapp.com/users/${decoded.id}`,
-        config
-      )
+      .get(`https://popaga-api.herokuapp.com/users/${decoded.id}`, config)
       .then((response) => {
         const { data, status } = response;
 
