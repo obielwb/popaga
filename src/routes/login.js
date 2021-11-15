@@ -1,8 +1,9 @@
 const express = require('express');
-
 const router = express.Router();
 
-router.get('', (req, res) => {
+const logged = require('../middlewares/logged');
+
+router.get('', logged, (req, res) => {
   return res.render('login');
 });
 
