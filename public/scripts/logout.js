@@ -1,6 +1,6 @@
 const logout = document.querySelector('#logout');
 
 logout.addEventListener('click', () => {
-  document.cookies = 'session=; max-age=1';
+  document.cookie = 'session=; max-age=0';
   location.assign('/');
 });

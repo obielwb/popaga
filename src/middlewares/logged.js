@@ -5,7 +5,7 @@ const config = require('../config/auth');
 module.exports = (req, res, next) => {
   const session = req.cookies.session;
 
-  if (!session) return res.redirect('/login');
+  if (!session) return next();
 
   verify(session, config.secret, (error, decoded) => {
     if (error) return res.redirect('/login');
