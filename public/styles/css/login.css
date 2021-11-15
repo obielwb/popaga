@@ -48,6 +48,8 @@ body #container #login-container #warning.show { display: -webkit-box; display: 
 
 body #container #login-container #warning p { width: 75%; }
 
+body #container #login-container #warning a { color: #ffffff; }
+
 body #container #login-container #login-label { width: 100%; text-align: center; color: var(--alt-text-color); font-size: 1.7em; }
 
 body #container #login-container #login-label b { width: 150%; height: 150%; background: var(--bold-bg-color); color: var(--accent-color); border-radius: 0.3rem; }

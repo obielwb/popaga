@@ -26,12 +26,16 @@ module.exports = (req, res, next) => {
     axios
       .get(`https://popaga-api.herokuapp.com/users/${decoded.id}`, config)
       .then((response) => {
-        const { data, status } = response;
+        if (response.data) {
+          const { data } = response;
 
-        if (status === 200) res.locals.user = data;
-        else res.locals.user = null;
-
-        return next();
+          res.locals.user = data;
+        } else res.locals.user = null;
+      })
+      .catch(() => {
+        res.locals.user = null;
       });
   });
+
+  return next();
 };

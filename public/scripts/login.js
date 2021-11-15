@@ -58,11 +58,28 @@ submit.addEventListener('click', (event) => {
     axios
       .post('https://popaga-api.herokuapp.com/users/auth', user)
       .then((response) => {
-        const { data, status } = response; // TODO: add cases with different status codes
+        if (response.data) {
+          const { token } = response.data;
 
-        if (status === 200) {
-          document.cookie = `session=${data.token}; max-age=259200`;
+          document.cookie = `session=${token}; max-age=259200`;
           location.assign('/app');
+        } else {
+          warn('Houve um problema com o login.');
+        }
+      })
+      .catch((error) => {
+        if (error.response) {
+          const { status } = error.response;
+
+          if (status == 404)
+            warn(
+              `Usuário com o email "${email.value}" não pôde ser encontrado. <a href="/signup">Sign Up?</a>`
+            );
+          else if (status == 401) warn('Senha incorreta. Tente novamente. ');
+          else if (status == 500)
+            warn('Houve um erro no servidor durante o sign up.');
+        } else {
+          warn('Houve um problema com o login.');
         }
       });
   }
