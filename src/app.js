@@ -1,3 +1,7 @@
+// TODOS:
+//  - fix sign up issue
+//  - make /login and /signup impossible to access when logged
+//  - add error handling to api responses
 const express = require('express');
 const app = express();
 
