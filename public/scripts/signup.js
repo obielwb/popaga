@@ -20,9 +20,11 @@ username.addEventListener('focus', () => {
 });
 
 username.addEventListener('focusout', () => {
-  if (username.value.length < 2)
+  if (username.value.length < 4)
     username.parentElement.style.border = '2px solid #ee5555';
   else username.parentElement.style.border = '2px solid var(--accent-color)';
+
+  warning.classList.remove('show');
 });
 
 email.addEventListener('focus', () => {
@@ -32,6 +34,8 @@ email.addEventListener('focus', () => {
 email.addEventListener('focusout', () => {
   if (!isValid(email)) email.parentElement.style.border = '2px solid #ee5555';
   else email.parentElement.style.border = '2px solid var(--accent-color)';
+
+  warning.classList.remove('show');
 });
 
 password.addEventListener('focus', () => {
@@ -41,6 +45,8 @@ password.addEventListener('focus', () => {
 password.addEventListener('focusout', () => {
   if (password.value.length < 6)
     password.parentElement.style.border = '2px solid #ee5555';
+
+  warning.classList.remove('show');
 });
 
 var file = null;
@@ -85,28 +91,35 @@ dismiss.addEventListener('click', (event) => {
   document.querySelector('#avatar-file-name').classList.remove('show');
 
   file = null;
-  filename.value =
-    'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png';
+  filename.value = '';
 });
+
+const warn = (message) => {
+  warning.classList.add('show');
+  warning.innerHTML = `<span>${message}</span>`;
+};
 
 submit.addEventListener('click', (event) => {
   warning.classList.remove('show');
 
-  if (username.value == '' || email.value == '' || password.value == '') {
-    warning.classList.add('show');
-    warning.innerHTML = '<p>Insira email e senha antes de prosseguir!</p>';
-  } else if (
-    username.value.length < 2 ||
-    !isValid(email) ||
-    password.value.length < 6
-  ) {
-    warning.classList.add('show');
-    warning.innerHTML = '<p>Email e/ou senha inválido(s)! Tente novamente.</p>';
-  } else {
+  if (!username.value || username.value == '')
+    warn('O campo "username" não pode ser vazio!');
+  else if (username.value.length < 4)
+    warn('O username deve ter pelo menos 4 caractres!');
+  else if (!email.value || email.value == '')
+    warn('O campo "email" não pode ser vazio!');
+  else if (!isValid(email))
+    warn('Email inválido! O email deve ter o formato "example@example.com".');
+  else if (!password.value || password.value == '')
+    warn('O campo "senha" não pode ser vazio!');
+  else if (password.value.length < 6)
+    warn('A senha deve ter pelo menos 6 caractres!');
+  else {
     const user = {
       username: username.value,
       email: email.value,
       password: password.value,
+      // avatar: file ? filename.value : 'https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png',
       avatar: file ? filename.value : null,
     };
 
@@ -117,6 +130,8 @@ submit.addEventListener('click', (event) => {
       )
       .then((response) => {
         const { data, status } = response; // TODO: add cases with different status codes,  if (data.error), if (status === 400)
+
+        console.log(data);
 
         if (status === 200) {
           document.cookie = `session=${data.token}; max-age=259200`;

@@ -2,7 +2,6 @@ const { verify } = require('jsonwebtoken');
 const axios = require('axios');
 
 const config = require('../config/auth');
-const { response } = require('express');
 
 module.exports = (req, res, next) => {
   const session = req.cookies.session;
