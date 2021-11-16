@@ -118,9 +118,14 @@ submit.addEventListener('click', (event) => {
     warn('O campo "senha" não pode ser vazio!');
   else if (password.value.length < 6)
     warn('A senha deve ter pelo menos 6 caractres!');
-  else if (file) {
-    if (file.size > 50000) warn('A imagem de perfil deve ser menor que 50KB!');
-  } else {
+  else {
+    if (file) {
+      if (file.size > 50000) {
+        warn('A imagem de perfil deve ser menor que 50KB!');
+        return event.preventDefault();
+      }
+    }
+
     submit.innerHTML = '<i class="fas fa-spinner"></i>';
     submit.style.pointerEvents = 'none';
     submit.style.cursor = 'not-allowed';
@@ -157,9 +162,7 @@ submit.addEventListener('click', (event) => {
           const { status } = error.response;
 
           if (status == 400)
-            warn(
-              `Usuário com o email "${email.value}" já existe. <a href="/login">Login?</a>`
-            );
+            warn(`Usuário já existente. <a href="/login">Login</a>?`);
           else if (status == 500)
             warn('Houve um erro no servidor durante o sign up.');
         } else {

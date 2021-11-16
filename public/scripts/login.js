@@ -82,9 +82,7 @@ submit.addEventListener('click', (event) => {
           const { status } = error.response;
 
           if (status == 404)
-            warn(
-              `Usuário com o email "${email.value}" não pôde ser encontrado. <a href="/signup">Sign Up?</a>`
-            );
+            warn(`Usuário não encontrado. <a href="/signup">Sign Up</a>?`);
           else if (status == 401) warn('Senha incorreta. Tente novamente. ');
           else if (status == 500)
             warn('Houve um erro no servidor durante o sign up.');
