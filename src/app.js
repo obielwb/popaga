@@ -1,6 +1,9 @@
 // TODOS:
-//  - update login/sign up pages
 //  - handle the image blob response
+//  - make login and sign up pages responsive
+//  - implement google, facebook and twitter login and sign up
+//  - make the home page look better
+//  - add  google, facebook and twitter on a column side to side with the normal sign up form
 const express = require('express');
 const app = express();
 

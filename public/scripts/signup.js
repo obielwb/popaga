@@ -55,9 +55,12 @@ const loadAvatar = (file) => {
   document.querySelector('#avatar-preview-container').classList.add('show');
   document.querySelector('#avatar-label').classList.add('hide');
   document.querySelector('#avatar-file-name').classList.add('show');
-  document.querySelector('#avatar-file-name').innerText = file.name;
-  document.querySelector('#avatar-file-name').style.color = '#525252';
-
+  document.querySelector('#avatar-file-name').innerText = `${file.name} (${
+    file.size / 1000
+  }KB)`;
+  document.querySelector('#avatar-file-name').style.color =
+    'var(--shadow-color)';
+  document.querySelector('#avatar-file-name').innerText += ` `;
   var reader = new FileReader();
 
   reader.onload = () => {

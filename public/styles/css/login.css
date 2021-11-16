@@ -20,7 +20,7 @@ body #container #top { top: -10rem; right: -10rem; }
 
 body #container #bottom { bottom: -30rem; left: -10rem; }
 
-body #container #card { width: 42.5vw; height: 75vh; border-radius: 7.5px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: var(--bg-color); }
+body #container #card { width: 42.5vw; height: 75vh; border-radius: 1em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: var(--bg-color); }
 
 body #container #card #login-container { min-width: 32.5rem; height: 65vh; max-width: 300px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
