@@ -19,7 +19,7 @@
     <link rel="icon" />
   </head>
   <body>
-    <nav id="navbar">
+    <nav id="navbar" style="display: none">
       <div id="nav-container">
         <a id="nav-logo" href="/">PóPaga <i class="fas fa-piggy-bank"></i></a>
         <div id="nav-content-container">
@@ -30,44 +30,64 @@
       </div>
     </nav>
     <div id="container">
-      <!-- <div class="circle"></div> -->
-      <div id="login-container">
-        <div id="warning"></div>
-        <h2 id="login-label">
-          Bem vindo de volta!<br />Insira <b>seus dados</b> para continuar:
-        </h2>
-        <form id="login-form">
-          <div class="text-input-container">
-            <i class="far fa-envelope"></i>
-            <input
-              id="login-email"
-              type="email"
-              autocomplete="off"
-              placeholder="Email"
-              name="email"
-              required
-            />
+      <div id="top" class="circle"></div>
+      <div id="card">
+        <div id="login-container">
+          <div id="warning"></div>
+          <a id="logo" href="/">PóPaga <i class="fas fa-piggy-bank"></i></a>
+          <form id="login-form">
+            <p class="input-label">Email</p>
+            <div class="text-input-container">
+              <i class="far fa-envelope"></i>
+              <div class="separator"></div>
+              <input
+                id="login-email"
+                type="email"
+                autocomplete="off"
+                placeholder="example@example.com"
+                name="email"
+                required
+              />
+            </div>
+            <p class="input-label">Senha</p>
+            <div class="text-input-container">
+              <i class="fas fa-key"></i>
+              <div class="separator"></div>
+              <input
+                id="login-password"
+                type="password"
+                autocomplete="off"
+                placeholder="******"
+                name="password"
+                required
+              />
+            </div>
+            <button id="login-submit" class="button" type="submit">
+              Login <i class="fas fa-sign-in-alt"></i>
+            </button>
+          </form>
+          <p id="dont-have-an-account-yet">
+            Ainda não tem uma conta?<a href="/signup">Sign Up!</a>
+          </p>
+          <div id="or">
+            <div class="or-line"></div>
+            <p>ou</p>
+            <div class="or-line"></div>
           </div>
-          <div class="text-input-container">
-            <i class="fas fa-key"></i>
-            <input
-              id="login-password"
-              type="password"
-              autocomplete="off"
-              placeholder="Senha"
-              name="password"
-              required
-            />
+          <div id="or-options">
+            <button class="option">
+              <img src="/icons/google.svg" />
+            </button>
+            <button class="option">
+              <img src="/icons/facebook.svg" />
+            </button>
+            <button class="option">
+              <img src="/icons/twitter.svg" />
+            </button>
           </div>
-          <button id="login-submit" type="submit">
-            Login <i class="fas fa-sign-in-alt"></i>
-          </button>
-        </form>
-        <p id="dont-have-an-account-yet">
-          Ainda não tem uma conta?<a href="/signup">Sign Up!</a>
-        </p>
+        </div>
       </div>
-      <!-- <div class="circle"></div> -->
+      <div id="bottom" class="circle"></div>
     </div>
     <script src="/scripts/login.js"></script>
     <script src="/scripts/theme.js"></script>

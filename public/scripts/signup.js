@@ -122,6 +122,9 @@ submit.addEventListener('click', (event) => {
     if (file.size > 50000) warn('A imagem de perfil deve ser menor que 50KB!');
   } else {
     submit.innerHTML = '<i class="fas fa-spinner"></i>';
+    submit.style.pointerEvents = 'none';
+    submit.style.cursor = 'not-allowed';
+    submit.style.opacity = '0.65';
 
     const user = {
       username: username.value,
@@ -145,7 +148,10 @@ submit.addEventListener('click', (event) => {
         }
       })
       .catch((error) => {
-        submit.innerHTML = 'Sign Up <i class="fas fa-sign-in-alt"></i>';
+        submit.innerHTML = 'Login <i class="fas fa-sign-in-alt"></i>';
+        submit.style.pointerEvents = 'auto';
+        submit.style.cursor = 'pointer';
+        submit.style.opacity = '1';
 
         if (error.response) {
           const { status } = error.response;

@@ -51,6 +51,9 @@ submit.addEventListener('click', (event) => {
     warn('A senha deve ter pelo menos 6 caractres!');
   else {
     submit.innerHTML = '<i class="fas fa-spinner"></i>';
+    submit.style.pointerEvents = 'none';
+    submit.style.cursor = 'not-allowed';
+    submit.style.opacity = '0.65';
 
     const user = {
       email: email.value,
@@ -71,6 +74,9 @@ submit.addEventListener('click', (event) => {
       })
       .catch((error) => {
         submit.innerHTML = 'Login <i class="fas fa-sign-in-alt"></i>';
+        submit.style.pointerEvents = 'auto';
+        submit.style.cursor = 'pointer';
+        submit.style.opacity = '1';
 
         if (error.response) {
           const { status } = error.response;
