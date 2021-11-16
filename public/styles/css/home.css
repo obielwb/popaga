@@ -14,9 +14,11 @@ body { font-family: 'SF Pro Display'; }
 
 #navbar #nav-container { width: 60%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#navbar #nav-container #nav-logo { font-size: 2em; font-weight: bold; color: var(--text-color); text-decoration: none; }
+#navbar #nav-container .nav-logo { font-size: 2em; font-weight: bold; color: var(--text-color); text-decoration: none; }
 
-#navbar #nav-container #nav-logo:visited, #navbar #nav-container #nav-logo:active { color: var(--text-color); }
+#navbar #nav-container .nav-logo:visited, #navbar #nav-container .nav-logo:active { color: var(--text-color); }
+
+#navbar #nav-container .nav-logo.mobile { display: none; }
 
 #navbar #nav-container #nav-content-container { width: 250px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -40,8 +42,9 @@ body { font-family: 'SF Pro Display'; }
 
 #navbar #nav-container #nav-content-container #nav-login-anchor:hover { background: var(--accent-color-hover); }
 
-@media screen and (max-width: 768px) { #nav-content-container { width: 125px !important; }
-  #nav-signup-anchor { display: none !important; } }
+@media screen and (max-width: 768px) { #nav-container, #nav-content-container { width: 100% !important; }
+  .nav-logo.mobile { display: block !important; }
+  .nav-logo.desktop, .theme-button { display: none !important; } }
 
 body { background: var(--bg-color); -webkit-transition: background 0.25s; transition: background 0.25s; }
 

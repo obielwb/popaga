@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
 
-    #nav-logo {
+    .nav-logo {
       font-size: 2em;
       font-weight: bold;
 
@@ -27,6 +27,10 @@
       &:visited,
       &:active {
         color: var(--text-color);
+      }
+
+      &.mobile {
+        display: none;
       }
     }
 
@@ -111,11 +115,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  #nav-container,
   #nav-content-container {
-    width: 125px !important;
+    width: 100% !important;
   }
 
-  #nav-signup-anchor {
+  .nav-logo.mobile {
+    display: block !important;
+  }
+
+  .nav-logo.desktop,
+  .theme-button {
     display: none !important;
   }
 }
