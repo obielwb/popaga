@@ -14,7 +14,7 @@
 
 ## 🎯 Sobre
 
-PóPaga. A plataforma [open source](https://opensource.org/history) de gerenciamento de amigos que você precisava. Veja também a [API] (https://github.com/oJPBarbosa/popaga-api)!
+PóPaga. A plataforma [open source](https://opensource.org/history) de gerenciamento de amigos que você precisava. Veja também a [API](https://github.com/oJPBarbosa/popaga-api)!
 
 ## 🙋 Como usar
 
