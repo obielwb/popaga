@@ -6,9 +6,9 @@ html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'SF Pro Display'; }
 
-:root.light { --bg-color: #ffffff; --app-bg-color: #d5dfec; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #ecf1f8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --warning-bg-color: #c84444c7; --theme-button-bg-color: #ffffff; --shadow-color: #0005; }
+:root.light { --bg-color: #ffffff; --app-bg-color: #d5dfec; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #ecf1f8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --warning-bg-color: #c84444c7; --social-media-bg-color-hover: #e7e5e5; --shadow-color: #0005; }
 
-:root.dark { --bg-color: #121212; --app-bg-color: #323232; --accent-color: #8257e5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --warning-bg-color: #491919c7; --theme-button-bg-color: #28213a; --shadow-color: #fff2; }
+:root.dark { --bg-color: #121212; --app-bg-color: #323232; --accent-color: #8257e5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --warning-bg-color: #491919c7; --social-media-bg-color-hover: #3f3f3fd8; --shadow-color: #fff5; }
 
 #navbar { position: fixed; top: 25%; border-radius: .5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 30vh; width: 4vw; display: flex; flex-direction: column; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: var(--bg-color); -webkit-transition: background 0.5s; transition: background 0.5s; -webkit-transition: -webkit-transform 1s; transition: -webkit-transform 1s; transition: transform 1s; transition: transform 1s, -webkit-transform 1s; -webkit-transform: translateX(-3vw); transform: translateX(-3vw); }
 

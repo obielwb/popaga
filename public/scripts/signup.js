@@ -8,6 +8,8 @@ const submit = document.querySelector('#signup-submit');
 
 const warning = document.querySelector('#warning');
 
+const apple = document.querySelector('#apple');
+
 const isValid = (email) => {
   const re =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -175,4 +177,9 @@ submit.addEventListener('click', (event) => {
   }
 
   event.preventDefault();
+});
+
+window.addEventListener('load', () => {
+  const theme = localStorage.getItem('theme');
+  apple.src = `/icons/apple-${theme}.svg`;
 });
