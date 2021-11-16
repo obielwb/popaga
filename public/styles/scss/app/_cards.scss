@@ -1,0 +1,69 @@
+.cards-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  .card {
+    height: 12rem;
+
+    background-color: var(--bg-color);
+
+    border-radius: .5rem;
+
+    margin-top: 1.2rem;
+
+    .card-header {
+      background-color: #C4C4C4;
+
+      height: 1.5rem;
+      width: 100%;
+
+      border-radius: .5rem .5rem 0 0 ;
+
+      .status {
+        margin-left: 1rem;
+
+        width: 2rem;
+        height: 2rem;
+
+        position: relative;
+        bottom: -.7rem;
+
+        background-color: var(--status-no-debt);
+
+        border-radius: 50%;
+      }
+    }
+
+    .card-content {
+      width: 100%;
+      height: 90%;
+
+      padding: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      section.top  {
+        width: 100%;
+
+        p {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+      }
+
+      .bottom {
+        width: 100%;
+        
+        p {
+          font-size: 1.3rem;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}

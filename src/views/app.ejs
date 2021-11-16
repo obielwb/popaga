@@ -32,7 +32,7 @@
         <a id="nav-logo" href="/app"
           >PóPaga <i class="fas fa-piggy-bank"></i
         ></a>
-        <h1>Bem vindo, <%= user.username %>.</h1>
+        <h1>Bem vindo, <%= user.username %>.</h1>   
         <div class="user-container">
           <img src="" alt="" />
         </div>
@@ -50,26 +50,27 @@
         </div>
       </header>
       <div id="content">
-        <section id="no-debt">
+        <section id="no-debt" class="section">
           <div class="section-label">
             <p>Sem Dívidas</p>
             <button id="add-card"><i class="fas fa-plus"></i></button>
           </div>
-          <%- include('./partials/cards.ejs') %>
+          <%- include('./partials/card-example.ejs') %> 
+          <%# include('./partials/cards.ejs') %>
         </section>
-        <section id="to-be-paid">
+        <section id="to-be-paid" class="section">
           <div class="section-label">
             <p>Em aberto</p>
           </div>
           <%- include('./partials/cards.ejs') %>
         </section>
-        <section id="paid-off">
+        <section id="paid-off" class="section">
           <div class="section-label">
             <p>Quitado</p>
           </div>
           <%- include('./partials/cards.ejs') %>
         </section>
-        <section id="archived">
+        <section id="archived" class="section">
           <div class="section-label">
             <p>Arquivados</p>
           </div>

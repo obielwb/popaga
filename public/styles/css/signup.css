@@ -6,7 +6,7 @@ html { height: 100%; font-size: 62.5%; }
 
 body { font-family: 'SF Pro Display'; }
 
-:root.light { --bg-color: #ffffff; --app-bg-color: #d5dfec; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #ecf1f8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --warning-bg-color: #c84444c7; --theme-button-bg-color: #ffffff; --shadow-color: #0005; }
+:root.light { --bg-color: #ffffff; --app-bg-color: #d5dfec; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #ecf1f8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --warning-bg-color: #c84444c7; --theme-button-bg-color: #ffffff; --shadow-color: #0005; --status-no-debt: #e7f82d; --status-to-be-paid: #FF3737; --status-paid-off: #04d361; --status-archived: #41413f; }
 
 :root.dark { --bg-color: #121212; --app-bg-color: #323232; --accent-color: #8257e5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --warning-bg-color: #491919c7; --theme-button-bg-color: #28213a; --shadow-color: #fff2; }
 
