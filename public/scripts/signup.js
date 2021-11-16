@@ -145,7 +145,7 @@ submit.addEventListener('click', (event) => {
         }
       })
       .catch((error) => {
-        submit.innerHTML = 'Login <i class="fas fa-sign-in-alt"></i>';
+        submit.innerHTML = 'Sign Up <i class="fas fa-sign-in-alt"></i>';
 
         if (error.response) {
           const { status } = error.response;
