@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="PóPaga" src="https://user-images.githubusercontent.com/79005271/141877573-c44739a5-6cca-4905-83db-7aefb3397d05.gif">
+  <img alt="PóPaga" src="https://user-images.githubusercontent.com/79005271/141879254-bdcea31e-36c4-4c07-b6f9-6425cf737612.gif">
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 
 ## 🎯 Sobre
 
-PóPaga. A plataforma [open source](https://opensource.org/history) de gerenciamento de amigos que você precisava. Veja o back-end da plataforma: [PóPaga API](https://github.com/oJPBarbosa/popaga-api)!
+PóPaga. A plataforma [open source](https://opensource.org/history) de gerenciamento de amigos que você precisava. Veja também a [API] (https://github.com/oJPBarbosa/popaga-api)!
 
 ## 🙋 Como usar
 
@@ -35,7 +35,7 @@ $ yarn add nodemon -D
 $ yarn start
 ```
 
-## rocket Tecnologias
+## :rocket: Tecnologias
 
 - [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/)
