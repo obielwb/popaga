@@ -36,7 +36,7 @@
     padding: 30px;
 
     font-size: 3em;
-    // color: #535353;
+
     color: #ffffff;
 
     i {
@@ -51,6 +51,7 @@
       }
     }
   }
+
   #themes-container {
     width: 50px;
     height: 100%;
@@ -74,10 +75,9 @@
 
       cursor: pointer;
 
-      // background: var(--theme-button-bg-color);
-      background: none;
+      background: var(--app-bg-color);
+      // background: none;
     }
-
 
     #light,
     #dark {
