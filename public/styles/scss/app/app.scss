@@ -2,6 +2,7 @@
 @import '../global/theme';
 @import 'nav';
 @import 'header';
+@import 'cards';
 
 body {
   background-color: var(--app-bg-color);
@@ -24,7 +25,9 @@ body {
 
       padding: 5rem 0 0 5rem;
 
-      section {
+      height: 90vh;
+
+      .section {
         font-size: 2rem;
         font-family: 'SF Pro Display';
         font-weight: bold;
