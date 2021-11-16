@@ -1,5 +1,6 @@
 // TODOS:
 //  - update login/sign up pages
+//  - handle the image blob response
 const express = require('express');
 const app = express();
 
