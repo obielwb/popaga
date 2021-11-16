@@ -76,7 +76,7 @@ body #container #signup-container #signup-form #avatar-related-container #avatar
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #avatar-preview { width: 6.4rem; height: 6.4rem; border-radius: 100%; display: none; }
 
-body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button { position: absolute; top: 5%; right: 5%; background: none; border: none; outline: none; font-size: 4em; font-weight: bold; cursor: pointer; color: #525252; -webkit-transition: color 0.5s; transition: color 0.5s; bottom: 0; right: 0; display: none; }
+body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button { position: absolute; top: 5%; right: 5%; background: none; border: none; outline: none; font-size: 4em; font-weight: bold; cursor: pointer; height: 40px; color: #525252; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: color 0.5s; transition: color 0.5s; bottom: 0; right: 0; display: none; }
 
 body #container #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button:hover { color: #ee5555; }
 

@@ -56,6 +56,7 @@ const loadAvatar = (file) => {
   document.querySelector('#avatar-label').classList.add('hide');
   document.querySelector('#avatar-file-name').classList.add('show');
   document.querySelector('#avatar-file-name').innerText = file.name;
+  document.querySelector('#avatar-file-name').style.color = '#525252';
 
   var reader = new FileReader();
 
@@ -69,8 +70,6 @@ const loadAvatar = (file) => {
 avatar.addEventListener('change', (event) => {
   file = event.target.files[0];
 
-  console.log(file);
-
   if (file != undefined) {
     loadAvatar(file);
 
@@ -81,6 +80,9 @@ avatar.addEventListener('change', (event) => {
     };
 
     reader.readAsDataURL(file);
+
+    if (file.size > 50000)
+      document.querySelector('#avatar-file-name').style.color = '#ee5555';
   }
 });
 
@@ -116,6 +118,8 @@ submit.addEventListener('click', (event) => {
     warn('O campo "senha" não pode ser vazio!');
   else if (password.value.length < 6)
     warn('A senha deve ter pelo menos 6 caractres!');
+  else if (file.size > 50000)
+    warn('A imagem de perfil deve ser menor que 50KB!');
   else {
     const user = {
       username: username.value,
