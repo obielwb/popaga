@@ -68,6 +68,14 @@ body #container #login-container #login-form #login-submit:hover { background: v
 
 body #container #login-container #login-form #login-submit .fa-sign-in-alt { margin-left: 0.5rem; }
 
+body #container #login-container #login-form #login-submit .fa-spinner { -webkit-animation: spin 5s infinite linear; animation: spin 5s infinite linear; font-size: 1.5em; }
+
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
+
+@keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
+
 body #container #login-container #dont-have-an-account-yet { margin-top: 1rem; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
 
 body #container #login-container #dont-have-an-account-yet a { color: #525252; margin-left: 0.5rem; -webkit-transition: color 0.5s; transition: color 0.5s; }

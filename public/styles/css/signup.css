@@ -98,6 +98,14 @@ body #container #signup-container #signup-form #signup-submit:hover { background
 
 body #container #signup-container #signup-form #signup-submit .fa-sign-in-alt { margin-left: 0.5rem; }
 
+body #container #signup-container #signup-form #signup-submit .fa-spinner { -webkit-animation: spin 5s infinite linear; animation: spin 5s infinite linear; font-size: 1.5em; }
+
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
+
+@keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
+
 body #container #signup-container #already-have-an-account { margin-top: 1rem; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
 
 body #container #signup-container #already-have-an-account a { color: #525252; margin-left: 0.5rem; -webkit-transition: color 0.5s; transition: color 0.5s; }

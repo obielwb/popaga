@@ -50,8 +50,9 @@ submit.addEventListener('click', (event) => {
   else if (password.value.length < 6)
     warn('A senha deve ter pelo menos 6 caractres!');
   else {
+    submit.innerHTML = '<i class="fas fa-spinner"></i>';
+
     const user = {
-      // does not work twice. what?
       email: email.value,
       password: password.value,
     };
@@ -69,6 +70,8 @@ submit.addEventListener('click', (event) => {
         }
       })
       .catch((error) => {
+        submit.innerHTML = 'Login <i class="fas fa-sign-in-alt"></i>';
+
         if (error.response) {
           const { status } = error.response;
 

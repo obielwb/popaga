@@ -118,9 +118,11 @@ submit.addEventListener('click', (event) => {
     warn('O campo "senha" não pode ser vazio!');
   else if (password.value.length < 6)
     warn('A senha deve ter pelo menos 6 caractres!');
-  else if (file.size > 50000)
-    warn('A imagem de perfil deve ser menor que 50KB!');
-  else {
+  else if (file) {
+    if (file.size > 50000) warn('A imagem de perfil deve ser menor que 50KB!');
+  } else {
+    submit.innerHTML = '<i class="fas fa-spinner"></i>';
+
     const user = {
       username: username.value,
       email: email.value,
@@ -143,6 +145,8 @@ submit.addEventListener('click', (event) => {
         }
       })
       .catch((error) => {
+        submit.innerHTML = 'Login <i class="fas fa-sign-in-alt"></i>';
+
         if (error.response) {
           const { status } = error.response;
 
