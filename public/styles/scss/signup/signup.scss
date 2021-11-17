@@ -51,8 +51,8 @@ body {
       background: var(--bg-color);
 
       #signup-container {
-        width: 80%;
-        height: 90%;
+        min-width: 32.5rem;
+        height: 65vh;
 
         display: flex;
         flex-direction: column;
@@ -110,371 +110,310 @@ body {
           }
         }
 
-        #signup {
+        .separator {
+          width: 2px;
+          height: 60%;
+
+          border-radius: 10px;
+
+          background: var(--shadow-color);
+        }
+
+        #signup-form {
           width: 100%;
-          height: 80%;
+          height: 90%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .input-label {
+            width: 100%;
+
+            font-size: 1.5em;
+            font-family: 'SF Pro Display';
+
+            margin-top: 1em;
+
+            color: var(--shadow-color);
+          }
+
+          .text-input-container {
+            width: 100%;
+            height: 5rem;
+
+            min-height: 50px;
+
+            color: var(--text-color);
+            background: none;
+
+            border: 0.2rem solid var(--shadow-color);
+            border-radius: 0.75rem;
+
+            font-size: 1.7em;
+
+            padding: 0.5rem;
+            margin-top: 1rem;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            transition: border 0.5s;
+
+            .fa-user-circle,
+            .fa-envelope,
+            .fa-key {
+              color: var(--shadow-color);
+
+              width: 15%;
+
+              display: flex;
+              justify-content: center;
+            }
+
+            #signup-username,
+            #signup-email,
+            #signup-password {
+              width: 85%;
+              height: 75%;
+
+              color: var(--text-color);
+
+              border: none;
+              outline: none;
+
+              background: none;
+
+              margin-left: 1rem;
+              margin-right: 1.5rem;
+
+              font-family: 'SF Pro Display';
+              font-size: 1em;
+            }
+          }
+
+          #avatar-related-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 1.5rem;
+
+            position: relative;
+
+            width: 75%;
+            height: 30%;
+
+            #file-input-container {
+              width: 6.4rem;
+              height: 6.4rem;
+
+              outline: none;
+
+              border-radius: 100%;
+              border: 3px dashed var(--shadow-color);
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              position: relative;
+
+              overflow: hidden;
+
+              background: none;
+
+              cursor: pointer;
+
+              .fa-folder-plus {
+                color: var(--shadow-color);
+
+                font-size: 2.4rem;
+              }
+
+              #avatar-file-input {
+                height: 100%;
+                width: 100%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                opacity: 0;
+
+                cursor: pointer;
+              }
+            }
+
+            #file-input-container.hide {
+              display: none;
+            }
+
+            #avatar-preview-container {
+              width: 50%;
+              height: 100%;
+
+              display: none;
+              align-items: center;
+              justify-content: center;
+
+              #avatar-preview {
+                width: 6.4rem;
+                height: 6.4rem;
+
+                border-radius: 100%;
+
+                display: none;
+              }
+
+              #dismiss-avatar-button {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+
+                background: none;
+                border: none;
+                outline: none;
+
+                font-size: 4em;
+                font-weight: bold;
+
+                cursor: pointer;
+
+                height: 40px;
+
+                color: var(--shadow-color);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transition: color 0.5s;
+
+                bottom: 0;
+                right: 0;
+
+                display: none;
+
+                &:hover {
+                  color: #ee5555;
+                }
+              }
+            }
+
+            #avatar-preview-container.show {
+              display: flex;
+
+              #avatar-preview,
+              #dismiss-avatar-button {
+                display: block;
+              }
+            }
+
+            #avatar-label,
+            #avatar-file-name {
+              font-size: 1.7rem;
+              font-family: 'SF Pro Display';
+
+              color: var(--shadow-color);
+
+              text-align: center;
+
+              margin-top: 1rem;
+            }
+
+            #avatar-label.hide {
+              display: none;
+            }
+
+            #avatar-file-name {
+              display: none;
+            }
+
+            #avatar-file-name.show {
+              display: block;
+            }
+          }
+
+          #signup-submit {
+            width: 100%;
+            height: 5rem;
+
+            min-height: 50px;
+
+            border: none;
+            outline: none;
+
+            border-radius: 7.5px;
+
+            transition: background 0.5s;
+
+            background: var(--accent-color);
+
+            color: #ffffff;
+
+            font-size: 1.8em;
+            font-family: 'SF Pro Display';
+            font-weight: bold;
+
+            margin-top: 1rem;
+
+            cursor: pointer;
+
+            &:hover {
+              background: var(--accent-color-hover);
+            }
+
+            .fa-sign-in-alt {
+              margin-left: 0.5rem;
+            }
+
+            .fa-spinner {
+              animation: spin 5s infinite linear;
+
+              font-size: 1.5em;
+            }
+
+            @keyframes spin {
+              from {
+                transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(1080deg);
+              }
+            }
+          }
+        }
+
+        #or {
+          width: 100%;
 
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
 
-          .separator {
-            width: 2px;
-            height: 60%;
+          margin-top: 1em;
 
-            border-radius: 10px;
+          .or-line {
+            width: 42%;
+            height: 2px;
 
             background: var(--shadow-color);
           }
 
-          #standard-signup {
-            width: 45%;
-            height: 80%;
+          p {
+            color: #525252;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            font-size: 1.5em;
+            font-family: 'SF Pro Display';
 
-            .input-label {
-              width: 100%;
-
-              font-size: 1.5em;
-              font-family: 'SF Pro Display';
-
-              margin-top: 1em;
-
-              color: var(--shadow-color);
-            }
-
-            .text-input-container {
-              width: 100%;
-              height: 5rem;
-
-              min-height: 50px;
-
-              color: var(--text-color);
-              background: none;
-
-              border: 0.2rem solid var(--shadow-color);
-              border-radius: 0.75rem;
-
-              font-size: 1.7em;
-
-              padding: 0.5rem;
-              margin-top: 1rem;
-
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: space-between;
-
-              transition: border 0.5s;
-
-              .fa-user-circle,
-              .fa-envelope,
-              .fa-key {
-                color: var(--shadow-color);
-
-                width: 15%;
-
-                display: flex;
-                justify-content: center;
-              }
-
-              #signup-username,
-              #signup-email,
-              #signup-password {
-                width: 85%;
-                height: 75%;
-
-                color: var(--text-color);
-
-                border: none;
-                outline: none;
-
-                background: none;
-
-                margin-left: 1rem;
-                margin-right: 1.5rem;
-
-                font-family: 'SF Pro Display';
-                font-size: 1em;
-              }
-            }
-
-            #avatar-related-container {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-
-              margin-top: 1.5rem;
-
-              position: relative;
-
-              width: 75%;
-              height: 30%;
-
-              #file-input-container {
-                width: 6.4rem;
-                height: 6.4rem;
-
-                outline: none;
-
-                border-radius: 100%;
-                border: 3px dashed var(--shadow-color);
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                position: relative;
-
-                overflow: hidden;
-
-                background: none;
-
-                cursor: pointer;
-
-                .fa-folder-plus {
-                  color: var(--shadow-color);
-
-                  font-size: 2.4rem;
-                }
-
-                #avatar-file-input {
-                  height: 100%;
-                  width: 100%;
-
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-
-                  opacity: 0;
-
-                  cursor: pointer;
-                }
-              }
-
-              #file-input-container.hide {
-                display: none;
-              }
-
-              #avatar-preview-container {
-                width: 50%;
-                height: 100%;
-
-                display: none;
-                align-items: center;
-                justify-content: center;
-
-                #avatar-preview {
-                  width: 6.4rem;
-                  height: 6.4rem;
-
-                  border-radius: 100%;
-
-                  display: none;
-                }
-
-                #dismiss-avatar-button {
-                  position: absolute;
-                  top: 5%;
-                  right: 5%;
-
-                  background: none;
-                  border: none;
-                  outline: none;
-
-                  font-size: 4em;
-                  font-weight: bold;
-
-                  cursor: pointer;
-
-                  height: 40px;
-
-                  color: var(--shadow-color);
-
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-
-                  transition: color 0.5s;
-
-                  bottom: 0;
-                  right: 0;
-
-                  display: none;
-
-                  &:hover {
-                    color: #ee5555;
-                  }
-                }
-              }
-
-              #avatar-preview-container.show {
-                display: flex;
-
-                #avatar-preview,
-                #dismiss-avatar-button {
-                  display: block;
-                }
-              }
-
-              #avatar-label,
-              #avatar-file-name {
-                font-size: 1.7rem;
-                font-family: 'SF Pro Display';
-
-                color: var(--shadow-color);
-
-                text-align: center;
-
-                margin-top: 1rem;
-              }
-
-              #avatar-label.hide {
-                display: none;
-              }
-
-              #avatar-file-name {
-                display: none;
-              }
-
-              #avatar-file-name.show {
-                display: block;
-              }
-            }
-
-            #signup-submit {
-              width: 100%;
-              height: 5rem;
-
-              min-height: 50px;
-
-              border: none;
-              outline: none;
-
-              border-radius: 7.5px;
-
-              transition: background 0.5s;
-
-              background: var(--accent-color);
-
-              color: #ffffff;
-
-              font-size: 1.8em;
-              font-family: 'SF Pro Display';
-              font-weight: bold;
-
-              margin-top: 1rem;
-
-              cursor: pointer;
-
-              &:hover {
-                background: var(--accent-color-hover);
-              }
-
-              .fa-sign-in-alt {
-                margin-left: 0.5rem;
-              }
-
-              .fa-spinner {
-                animation: spin 5s infinite linear;
-
-                font-size: 1.5em;
-              }
-
-              @keyframes spin {
-                from {
-                  transform: rotate(0deg);
-                }
-                to {
-                  transform: rotate(1080deg);
-                }
-              }
-            }
-          }
-
-          #or {
-            width: 10%;
-            height: 100%;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .or-line {
-              width: 2px;
-              height: 30%;
-
-              background: var(--shadow-color);
-            }
-
-            p {
-              color: var(--shadow-color);
-
-              font-size: 1.5em;
-              font-family: 'SF Pro Display';
-
-              margin-top: 10px;
-              margin-bottom: 10px;
-            }
-          }
-
-          #social-media-signup {
-            width: 45%;
-            height: 70%;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-
-            .option {
-              width: 100%;
-              height: 50px;
-
-              outline: none;
-              background: none;
-
-              border: 2px solid var(--shadow-color);
-              border-radius: 7.5px;
-
-              cursor: pointer;
-
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: space-around;
-
-              &:hover {
-                background: var(--social-media-bg-color-hover);
-              }
-
-              .option-label {
-                color: var(--shadow-color);
-
-                width: 70%;
-
-                text-align: left;
-
-                font-size: 1.3em;
-                font-family: 'SF Pro Display';
-              }
-
-              img {
-                width: 24px;
-                height: 24px;
-
-                &#apple {
-                  height: 28px;
-                }
-              }
-            }
+            margin-left: 10px;
+            margin-right: 10px;
           }
         }
 
@@ -524,25 +463,5 @@ body {
 
   #signup {
     flex-direction: column !important;
-  }
-
-  #or {
-    width: 100% !important;
-
-    flex-direction: row !important;
-
-    margin-top: 1em !important;
-
-    .or-line {
-      width: 42% !important;
-      height: 2px !important;
-
-      background: var(--shadow-color) !important;
-    }
-
-    p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
   }
 }

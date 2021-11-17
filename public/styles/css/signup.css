@@ -48,7 +48,7 @@ body #container #bottom { bottom: -30rem; left: -10rem; }
 
 body #container #card { width: 50vw; height: 75vh; border-radius: 1em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: var(--bg-color); }
 
-body #container #card #signup-container { width: 80%; height: 90%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #card #signup-container { min-width: 32.5rem; height: 65vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 body #container #card #signup-container #warning { width: 100%; height: 7rem; background: var(--warning-bg-color); border: 0.2rem solid #ee5555; border-radius: 7.5px; margin-bottom: 2rem; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #ffffff; font-size: 1.5em; font-family: 'SF Pro Display'; font-weight: bold; text-align: center; }
 
@@ -62,57 +62,55 @@ body #container #card #signup-container #logo { font-size: 5em; font-family: 'SF
 
 body #container #card #signup-container #logo:active, body #container #card #signup-container #logo:visited { color: var(--accent-color); }
 
-body #container #card #signup-container #signup { width: 100%; height: 80%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #card #signup-container .separator { width: 2px; height: 60%; border-radius: 10px; background: var(--shadow-color); }
 
-body #container #card #signup-container #signup .separator { width: 2px; height: 60%; border-radius: 10px; background: var(--shadow-color); }
+body #container #card #signup-container #signup-form { width: 100%; height: 90%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #card #signup-container #signup #standard-signup { width: 45%; height: 80%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #card #signup-container #signup-form .input-label { width: 100%; font-size: 1.5em; font-family: 'SF Pro Display'; margin-top: 1em; color: var(--shadow-color); }
 
-body #container #card #signup-container #signup #standard-signup .input-label { width: 100%; font-size: 1.5em; font-family: 'SF Pro Display'; margin-top: 1em; color: var(--shadow-color); }
+body #container #card #signup-container #signup-form .text-input-container { width: 100%; height: 5rem; min-height: 50px; color: var(--text-color); background: none; border: 0.2rem solid var(--shadow-color); border-radius: 0.75rem; font-size: 1.7em; padding: 0.5rem; margin-top: 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-transition: border 0.5s; transition: border 0.5s; }
 
-body #container #card #signup-container #signup #standard-signup .text-input-container { width: 100%; height: 5rem; min-height: 50px; color: var(--text-color); background: none; border: 0.2rem solid var(--shadow-color); border-radius: 0.75rem; font-size: 1.7em; padding: 0.5rem; margin-top: 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-transition: border 0.5s; transition: border 0.5s; }
+body #container #card #signup-container #signup-form .text-input-container .fa-user-circle, body #container #card #signup-container #signup-form .text-input-container .fa-envelope, body #container #card #signup-container #signup-form .text-input-container .fa-key { color: var(--shadow-color); width: 15%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #card #signup-container #signup #standard-signup .text-input-container .fa-user-circle, body #container #card #signup-container #signup #standard-signup .text-input-container .fa-envelope, body #container #card #signup-container #signup #standard-signup .text-input-container .fa-key { color: var(--shadow-color); width: 15%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #card #signup-container #signup-form .text-input-container #signup-username, body #container #card #signup-container #signup-form .text-input-container #signup-email, body #container #card #signup-container #signup-form .text-input-container #signup-password { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-left: 1rem; margin-right: 1.5rem; font-family: 'SF Pro Display'; font-size: 1em; }
 
-body #container #card #signup-container #signup #standard-signup .text-input-container #signup-username, body #container #card #signup-container #signup #standard-signup .text-input-container #signup-email, body #container #card #signup-container #signup #standard-signup .text-input-container #signup-password { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-left: 1rem; margin-right: 1.5rem; font-family: 'SF Pro Display'; font-size: 1em; }
+body #container #card #signup-container #signup-form #avatar-related-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 1.5rem; position: relative; width: 75%; height: 30%; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 1.5rem; position: relative; width: 75%; height: 30%; }
+body #container #card #signup-container #signup-form #avatar-related-container #file-input-container { width: 6.4rem; height: 6.4rem; outline: none; border-radius: 100%; border: 3px dashed var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #file-input-container { width: 6.4rem; height: 6.4rem; outline: none; border-radius: 100%; border: 3px dashed var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; overflow: hidden; background: none; cursor: pointer; }
+body #container #card #signup-container #signup-form #avatar-related-container #file-input-container .fa-folder-plus { color: var(--shadow-color); font-size: 2.4rem; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #file-input-container .fa-folder-plus { color: var(--shadow-color); font-size: 2.4rem; }
+body #container #card #signup-container #signup-form #avatar-related-container #file-input-container #avatar-file-input { height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #file-input-container #avatar-file-input { height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer; }
+body #container #card #signup-container #signup-form #avatar-related-container #file-input-container.hide { display: none; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #file-input-container.hide { display: none; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-preview-container { width: 50%; height: 100%; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-preview-container { width: 50%; height: 100%; display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-preview-container #avatar-preview { width: 6.4rem; height: 6.4rem; border-radius: 100%; display: none; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-preview-container #avatar-preview { width: 6.4rem; height: 6.4rem; border-radius: 100%; display: none; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button { position: absolute; top: 5%; right: 5%; background: none; border: none; outline: none; font-size: 4em; font-weight: bold; cursor: pointer; height: 40px; color: var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: color 0.5s; transition: color 0.5s; bottom: 0; right: 0; display: none; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-preview-container #dismiss-avatar-button { position: absolute; top: 5%; right: 5%; background: none; border: none; outline: none; font-size: 4em; font-weight: bold; cursor: pointer; height: 40px; color: var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: color 0.5s; transition: color 0.5s; bottom: 0; right: 0; display: none; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-preview-container #dismiss-avatar-button:hover { color: #ee5555; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-preview-container #dismiss-avatar-button:hover { color: #ee5555; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-preview-container.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-preview-container.show { display: -webkit-box; display: -ms-flexbox; display: flex; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-preview-container.show #avatar-preview, body #container #card #signup-container #signup-form #avatar-related-container #avatar-preview-container.show #dismiss-avatar-button { display: block; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-preview-container.show #avatar-preview, body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-preview-container.show #dismiss-avatar-button { display: block; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-label, body #container #card #signup-container #signup-form #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'SF Pro Display'; color: var(--shadow-color); text-align: center; margin-top: 1rem; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-label, body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-file-name { font-size: 1.7rem; font-family: 'SF Pro Display'; color: var(--shadow-color); text-align: center; margin-top: 1rem; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-label.hide { display: none; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-label.hide { display: none; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-file-name { display: none; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-file-name { display: none; }
+body #container #card #signup-container #signup-form #avatar-related-container #avatar-file-name.show { display: block; }
 
-body #container #card #signup-container #signup #standard-signup #avatar-related-container #avatar-file-name.show { display: block; }
+body #container #card #signup-container #signup-form #signup-submit { width: 100%; height: 5rem; min-height: 50px; border: none; outline: none; border-radius: 7.5px; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 1rem; cursor: pointer; }
 
-body #container #card #signup-container #signup #standard-signup #signup-submit { width: 100%; height: 5rem; min-height: 50px; border: none; outline: none; border-radius: 7.5px; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 1rem; cursor: pointer; }
+body #container #card #signup-container #signup-form #signup-submit:hover { background: var(--accent-color-hover); }
 
-body #container #card #signup-container #signup #standard-signup #signup-submit:hover { background: var(--accent-color-hover); }
+body #container #card #signup-container #signup-form #signup-submit .fa-sign-in-alt { margin-left: 0.5rem; }
 
-body #container #card #signup-container #signup #standard-signup #signup-submit .fa-sign-in-alt { margin-left: 0.5rem; }
-
-body #container #card #signup-container #signup #standard-signup #signup-submit .fa-spinner { -webkit-animation: spin 5s infinite linear; animation: spin 5s infinite linear; font-size: 1.5em; }
+body #container #card #signup-container #signup-form #signup-submit .fa-spinner { -webkit-animation: spin 5s infinite linear; animation: spin 5s infinite linear; font-size: 1.5em; }
 
 @-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
@@ -120,23 +118,11 @@ body #container #card #signup-container #signup #standard-signup #signup-submit 
 @keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
 
-body #container #card #signup-container #signup #or { width: 10%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #card #signup-container #or { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 1em; }
 
-body #container #card #signup-container #signup #or .or-line { width: 2px; height: 30%; background: var(--shadow-color); }
+body #container #card #signup-container #or .or-line { width: 42%; height: 2px; background: var(--shadow-color); }
 
-body #container #card #signup-container #signup #or p { color: var(--shadow-color); font-size: 1.5em; font-family: 'SF Pro Display'; margin-top: 10px; margin-bottom: 10px; }
-
-body #container #card #signup-container #signup #social-media-signup { width: 45%; height: 70%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; }
-
-body #container #card #signup-container #signup #social-media-signup .option { width: 100%; height: 50px; outline: none; background: none; border: 2px solid var(--shadow-color); border-radius: 7.5px; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; }
-
-body #container #card #signup-container #signup #social-media-signup .option:hover { background: var(--social-media-bg-color-hover); }
-
-body #container #card #signup-container #signup #social-media-signup .option .option-label { color: var(--shadow-color); width: 70%; text-align: left; font-size: 1.3em; font-family: 'SF Pro Display'; }
-
-body #container #card #signup-container #signup #social-media-signup .option img { width: 24px; height: 24px; }
-
-body #container #card #signup-container #signup #social-media-signup .option img#apple { height: 28px; }
+body #container #card #signup-container #or p { color: #525252; font-size: 1.5em; font-family: 'SF Pro Display'; margin-left: 10px; margin-right: 10px; }
 
 body #container #card #signup-container #already-have-an-account { margin-top: 1rem; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
 
@@ -149,8 +135,5 @@ body #container #card #signup-container #already-have-an-account a:hover, body #
 @media screen and (max-width: 720px) { #container { height: 200vh; }
   .circle { display: none !important; }
   #card { width: 100% !important; height: 150% !important; }
-  #signup { -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; -ms-flex-direction: column !important; flex-direction: column !important; }
-  #or { width: 100% !important; -webkit-box-orient: horizontal !important; -webkit-box-direction: normal !important; -ms-flex-direction: row !important; flex-direction: row !important; margin-top: 1em !important; }
-  #or .or-line { width: 42% !important; height: 2px !important; background: var(--shadow-color) !important; }
-  #or p { margin-left: 10px; margin-right: 10px; } }
+  #signup { -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; -ms-flex-direction: column !important; flex-direction: column !important; } }
 /*# sourceMappingURL=signup.css.map */

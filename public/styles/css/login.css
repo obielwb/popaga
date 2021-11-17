@@ -36,25 +36,25 @@ body #container #card #login-container #logo { font-size: 5em; font-family: 'SF 
 
 body #container #card #login-container #logo:active, body #container #card #login-container #logo:visited { color: var(--accent-color); }
 
-body #container #card #login-container #standard-login { width: 100%; height: 40%; min-height: 20rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+body #container #card #login-container #login-form { width: 100%; height: 40%; min-height: 20rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
 
-body #container #card #login-container #standard-login .input-label { width: 100%; font-size: 1.5em; font-family: 'SF Pro Display'; margin-top: 1em; color: var(--shadow-color); }
+body #container #card #login-container #login-form .input-label { width: 100%; font-size: 1.5em; font-family: 'SF Pro Display'; margin-top: 1em; color: var(--shadow-color); }
 
-body #container #card #login-container #standard-login .text-input-container { width: 100%; height: 5rem; min-height: 50px; color: var(--text-color); background: none; border: 0.2rem solid var(--shadow-color); border-radius: 0.75rem; font-size: 1.7em; padding: 0.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; -webkit-transition: border 0.5s; transition: border 0.5s; }
+body #container #card #login-container #login-form .text-input-container { width: 100%; height: 5rem; min-height: 50px; color: var(--text-color); background: none; border: 0.2rem solid var(--shadow-color); border-radius: 0.75rem; font-size: 1.7em; padding: 0.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; -webkit-transition: border 0.5s; transition: border 0.5s; }
 
-body #container #card #login-container #standard-login .text-input-container .separator { width: 2px; height: 60%; border-radius: 10px; background: var(--shadow-color); }
+body #container #card #login-container #login-form .text-input-container .separator { width: 2px; height: 60%; border-radius: 10px; background: var(--shadow-color); }
 
-body #container #card #login-container #standard-login .text-input-container .fa-envelope, body #container #card #login-container #standard-login .text-input-container .fa-key { color: var(--shadow-color); width: 15%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+body #container #card #login-container #login-form .text-input-container .fa-envelope, body #container #card #login-container #login-form .text-input-container .fa-key { color: var(--shadow-color); width: 15%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-body #container #card #login-container #standard-login .text-input-container #login-email, body #container #card #login-container #standard-login .text-input-container #login-password { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-left: 1rem; margin-right: 1.5rem; font-family: 'SF Pro Display'; font-size: 1em; }
+body #container #card #login-container #login-form .text-input-container #login-email, body #container #card #login-container #login-form .text-input-container #login-password { width: 85%; height: 75%; color: var(--text-color); border: none; outline: none; background: none; margin-left: 1rem; margin-right: 1.5rem; font-family: 'SF Pro Display'; font-size: 1em; }
 
-body #container #card #login-container #standard-login #login-submit { width: 100%; height: 5rem; min-height: 50px; border: none; outline: none; border-radius: 7.5px; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 1rem; cursor: pointer; }
+body #container #card #login-container #login-form #login-submit { width: 100%; height: 5rem; min-height: 50px; border: none; outline: none; border-radius: 7.5px; -webkit-transition: background 0.5s; transition: background 0.5s; background: var(--accent-color); color: #ffffff; font-size: 1.8em; font-family: 'SF Pro Display'; font-weight: bold; margin-top: 1rem; cursor: pointer; }
 
-body #container #card #login-container #standard-login #login-submit:hover { background: var(--accent-color-hover); }
+body #container #card #login-container #login-form #login-submit:hover { background: var(--accent-color-hover); }
 
-body #container #card #login-container #standard-login #login-submit .fa-sign-in-alt { margin-left: 0.5rem; }
+body #container #card #login-container #login-form #login-submit .fa-sign-in-alt { margin-left: 0.5rem; }
 
-body #container #card #login-container #standard-login #login-submit .fa-spinner { -webkit-animation: spin 5s infinite linear; animation: spin 5s infinite linear; font-size: 1.5em; }
+body #container #card #login-container #login-form #login-submit .fa-spinner { -webkit-animation: spin 5s infinite linear; animation: spin 5s infinite linear; font-size: 1.5em; }
 
 @-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
@@ -62,27 +62,17 @@ body #container #card #login-container #standard-login #login-submit .fa-spinner
 @keyframes spin { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   to { -webkit-transform: rotate(1080deg); transform: rotate(1080deg); } }
 
-body #container #card #login-container #dont-have-an-account-yet { margin-top: 1rem; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
-
-body #container #card #login-container #dont-have-an-account-yet a { color: #525252; margin-left: 0.5rem; -webkit-transition: color 0.5s; transition: color 0.5s; }
-
-body #container #card #login-container #dont-have-an-account-yet a:visited { color: #525252; }
-
-body #container #card #login-container #dont-have-an-account-yet a:hover, body #container #card #login-container #dont-have-an-account-yet a:active { color: var(--accent-color-hover); }
-
 body #container #card #login-container #or { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 1em; }
 
 body #container #card #login-container #or .or-line { width: 42%; height: 2px; background: var(--shadow-color); }
 
 body #container #card #login-container #or p { color: #525252; font-size: 1.5em; font-family: 'SF Pro Display'; margin-left: 10px; margin-right: 10px; }
 
-body #container #card #login-container #social-media-login { width: 100%; height: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 1em; }
+body #container #card #dont-have-an-account-yet { margin-top: 1rem; color: #525252; font-family: 'SF Pro Display'; font-size: 1.5em; }
 
-body #container #card #login-container #social-media-login .option { width: 30%; height: 100%; background: none; outline: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 2px solid var(--shadow-color); border-radius: 7.5px; cursor: pointer; }
+body #container #card #dont-have-an-account-yet a { color: #525252; margin-left: 0.5rem; -webkit-transition: color 0.5s; transition: color 0.5s; }
 
-body #container #card #login-container #social-media-login .option:hover { background: var(--social-media-bg-color-hover); }
+body #container #card #dont-have-an-account-yet a:visited { color: #525252; }
 
-body #container #card #login-container #social-media-login .option img { width: 24px; height: 24px; }
-
-body #container #card #login-container #social-media-login .option img#apple { height: 28px; }
+body #container #card #dont-have-an-account-yet a:hover, body #container #card #dont-have-an-account-yet a:active { color: var(--accent-color-hover); }
 /*# sourceMappingURL=login.css.map */
