@@ -156,7 +156,7 @@ submit.addEventListener('click', (event) => {
         }
       })
       .catch((error) => {
-        submit.innerHTML = 'Login <i class="fas fa-sign-in-alt"></i>';
+        submit.innerHTML = 'Sign Up <i class="fas fa-sign-in-alt"></i>';
         submit.style.pointerEvents = 'auto';
         submit.style.cursor = 'pointer';
         submit.style.opacity = '1';
