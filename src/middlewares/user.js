@@ -24,7 +24,7 @@ module.exports = (req, res, next) => {
     };
 
     axios
-      .get(`https://popaga-api.herokuapp.com/users/${decoded.id}`, config)
+      .get(`http://localhost:3030/users/${decoded.id}`, config)
       .then((response) => {
         if (response.data) {
           const { data } = response;

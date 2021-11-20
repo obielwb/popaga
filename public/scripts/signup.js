@@ -144,7 +144,7 @@ submit.addEventListener('click', (event) => {
     };
 
     axios
-      .post('https://popaga-api.herokuapp.com/users', user)
+      .post('http://localhost:3030/users', user)
       .then((response) => {
         if (response.data) {
           const { token } = response.data;
@@ -176,4 +176,3 @@ submit.addEventListener('click', (event) => {
 
   event.preventDefault();
 });
-
