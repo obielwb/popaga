@@ -8,7 +8,7 @@ body { font-family: 'SF Pro Display'; }
 
 :root.light { --bg-color: #ffffff; --app-bg-color: #d5dfec; --accent-color: #04d361; --accent-color-hover: #66e682; --bold-bg-color: #ecf1f8; --text-color: #000; --alt-text-color: #1d1c1c; --title-color: #545454; --warning-bg-color: #c84444c7; --social-media-bg-color-hover: #e7e5e5; --shadow-color: #0005; --status-no-debt: #e7f82d; --status-to-be-paid: #ff3737; --status-paid-off: #04d361; --status-archived: #41413f; }
 
-:root.dark { --bg-color: #121212; --app-bg-color: #323232; --accent-color: #8257e5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --warning-bg-color: #491919c7; --social-media-bg-color-hover: #3f3f3fd8; --shadow-color: #fff5; }
+:root.dark { --bg-color: #121212; --app-bg-color: #323232; --accent-color: #8257e5; --accent-color-hover: #9c7ce6; --bold-bg-color: #2a2438; --text-color: #ffffff; --alt-text-color: #e1e1e1; --title-color: #beb7b7; --warning-bg-color: #491919c7; --social-media-bg-color-hover: #3f3f3fd8; --shadow-color: #fff5; --status-no-debt: #e7f82d; --status-to-be-paid: #ff3737; --status-paid-off: #04d361; --status-archived: #41413f; }
 
 #navbar { width: 100%; height: 7.5vh; border-bottom: 2px solid var(--shadow-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
