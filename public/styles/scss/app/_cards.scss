@@ -6,6 +6,8 @@
   flex-direction: column;
 
   .card {
+    cursor: pointer;
+
     height: 12rem;
 
     background-color: var(--bg-color);
@@ -13,6 +15,13 @@
     border-radius: .5rem;
 
     margin-top: 1.2rem;
+
+    transition: box-shadow 0.5s;
+
+    &:hover, 
+    &:focus {
+      box-shadow: .5rem .5rem 1rem #6e6e6e;
+    }
 
     .card-header {
       background-color: #C4C4C4;
