@@ -23,7 +23,7 @@ themes.forEach((theme) => {
 
     root.classList.remove(localStorage.getItem('theme'));
     root.classList.add(theme);
-    favicon.href = `/favicon/${theme}.svg`;
+    favicon.href = `/favicons/${theme}.svg`;
 
     reference[theme].classList.add('hide');
     inverse[theme].classList.remove('hide');
@@ -45,5 +45,5 @@ window.addEventListener('load', () => {
   reference[theme].classList.add('hide');
 
   root.classList.toggle(theme);
-  favicon.href = `/favicon/${theme}.svg`;
+  favicon.href = `/favicons/${theme}.svg`;
 });
