@@ -1,0 +1,53 @@
+.card-modal {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.7);
+
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-content {
+    width: 50%;
+    height: 70%;
+
+    background-color: var(--bg-color);
+
+    border-radius: .5rem;
+
+    padding: 1rem;
+
+    .close-modal {
+      border: none;
+      background: none;
+
+      position: relative;
+      right: 0;
+
+      color: var(--app-bg-color);
+      font-size: 2rem;
+
+      cursor: pointer;
+
+      transform: color 1s;
+
+      &:hover {
+        color: #c84444c7; 
+      }
+    }
+  }
+}
+
