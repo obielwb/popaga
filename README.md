@@ -29,7 +29,7 @@ $ cd popaga
 $ yarn
 
 # Instale as dependências de desenvolvimento
-$ yarn add nodemon -D
+$ yarn add ejs nodemon -D
 
 # Inicie a aplicação
 $ yarn start
