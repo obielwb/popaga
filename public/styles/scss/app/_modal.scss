@@ -19,33 +19,120 @@
     opacity: 1;
     visibility: visible;
   }
-
+  
+  
   .modal-content {
     width: 50%;
     height: 70%;
-
+    
     background-color: var(--bg-color);
-
+    
     border-radius: .5rem;
+    
+    padding: 3rem 2rem 1rem 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    section.header {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      h1 {
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 2.6rem;
+      }
+      
+      .close-modal {
+        border: none;
+        background: none;
+    
+        position: relative;
+        right: 0;
+        top: 0;
+    
+        color: var(--app-bg-color);
+        font-size: 2rem;
+    
+        cursor: pointer;
+    
+        transition: color 1s;
+    
+        &:hover,
+        &:focus {
+          color: #c84444c7; 
+        }
+      }
+    }
 
-    padding: 1rem;
+    section.status {
 
-    .close-modal {
-      border: none;
-      background: none;
+    }
 
-      position: relative;
-      right: 0;
+    section.content {
+      width: 100%;
 
-      color: var(--app-bg-color);
-      font-size: 2rem;
+      #data-table {
+        width: 100%;
+        border-spacing: 0 0.5rem;
+        color: var(--bg-color);
+        
+        img {
+          border-radius: 50%;
+        }
 
-      cursor: pointer;
+        thead {
+          tr th {
+            color: #8A8A8A;
+            font-size: 1.5rem;
+            text-align: left;
 
-      transform: color 1s;
+            padding: .5rem;
+          }
+        }
 
-      &:hover {
-        color: #c84444c7; 
+        tbody {
+          color: var(--text-color);
+          
+          tr {
+            padding: .5rem 1rem;
+
+            border-radius: .5rem ;
+            transition: box-shadow 0.5s;
+            
+            &:hover, 
+            &:focus {
+              box-shadow: .5rem .5rem 1rem #6e6e6e;
+            }
+
+            
+            td {
+              font-size: 1.5rem;
+              padding: 1rem;
+
+              &.lend {
+                color: var(--accent-color);
+              }
+
+              &.user {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                p {
+                  margin-left: .5rem;
+                  font-weight: bold ;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

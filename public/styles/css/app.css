@@ -72,11 +72,37 @@ body { font-family: 'SF Pro Display'; }
 
 .card-modal.active { opacity: 1; visibility: visible; }
 
-.card-modal .modal-content { width: 50%; height: 70%; background-color: var(--bg-color); border-radius: .5rem; padding: 1rem; }
+.card-modal .modal-content { width: 50%; height: 70%; background-color: var(--bg-color); border-radius: .5rem; padding: 3rem 2rem 1rem 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.card-modal .modal-content .close-modal { border: none; background: none; position: relative; right: 0; color: var(--app-bg-color); font-size: 2rem; cursor: pointer; -webkit-transform: color 1s; transform: color 1s; }
+.card-modal .modal-content section.header { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.card-modal .modal-content .close-modal:hover { color: #c84444c7; }
+.card-modal .modal-content section.header h1 { color: var(--text-color); font-weight: bold; font-size: 2.6rem; }
+
+.card-modal .modal-content section.header .close-modal { border: none; background: none; position: relative; right: 0; top: 0; color: var(--app-bg-color); font-size: 2rem; cursor: pointer; -webkit-transition: color 1s; transition: color 1s; }
+
+.card-modal .modal-content section.header .close-modal:hover, .card-modal .modal-content section.header .close-modal:focus { color: #c84444c7; }
+
+.card-modal .modal-content section.content { width: 100%; }
+
+.card-modal .modal-content section.content #data-table { width: 100%; border-spacing: 0 0.5rem; color: var(--bg-color); }
+
+.card-modal .modal-content section.content #data-table img { border-radius: 50%; }
+
+.card-modal .modal-content section.content #data-table thead tr th { color: #8A8A8A; font-size: 1.5rem; text-align: left; padding: .5rem; }
+
+.card-modal .modal-content section.content #data-table tbody { color: var(--text-color); }
+
+.card-modal .modal-content section.content #data-table tbody tr { padding: .5rem 1rem; border-radius: .5rem; -webkit-transition: -webkit-box-shadow 0.5s; transition: -webkit-box-shadow 0.5s; transition: box-shadow 0.5s; transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
+
+.card-modal .modal-content section.content #data-table tbody tr:hover, .card-modal .modal-content section.content #data-table tbody tr:focus { -webkit-box-shadow: .5rem .5rem 1rem #6e6e6e; box-shadow: .5rem .5rem 1rem #6e6e6e; }
+
+.card-modal .modal-content section.content #data-table tbody tr td { font-size: 1.5rem; padding: 1rem; }
+
+.card-modal .modal-content section.content #data-table tbody tr td.lend { color: var(--accent-color); }
+
+.card-modal .modal-content section.content #data-table tbody tr td.user { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.card-modal .modal-content section.content #data-table tbody tr td.user p { margin-left: .5rem; font-weight: bold; }
 
 body { background-color: var(--app-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-transition: background 0.5s; transition: background 0.5s; }
 
