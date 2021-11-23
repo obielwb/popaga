@@ -12,3 +12,17 @@ cards.forEach((card) => {
     cardModal.classList.remove("active");
   });
 });
+
+
+// show user debts when hovering over
+const bills = document.querySelectorAll("tbody tr");
+
+bills.forEach((bill) => {
+  const usersInDebtContaiter = bill.querySelector("td.had-to-pay");
+
+  usersInDebtContaiter.forEach((user) => {
+    user.addEventListener("focus", () => {
+      // construir o elemento que irá aparecer
+    });
+  });
+});
