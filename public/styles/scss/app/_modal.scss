@@ -29,33 +29,20 @@
     
     border-radius: .5rem;
     
-    padding: 3rem 2rem 1rem 2rem;
+    padding: 3rem 4rem 1rem 4rem;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    
-    section.header {
+    #close {
       width: 100%;
-      
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      
-      h1 {
-        color: var(--text-color);
-        font-weight: bold;
-        font-size: 2.6rem;
-      }
-      
+      text-align: right;
+
       .close-modal {
+
         border: none;
         background: none;
-    
-        position: relative;
-        right: 0;
-        top: 0;
     
         color: var(--app-bg-color);
         font-size: 2rem;
@@ -70,9 +57,87 @@
         }
       }
     }
+    
+    section.header {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      h1 {
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 4rem;
+      }
+      
+    }
 
     section.status {
+      width: 100%;
+      margin: 1.5rem 0 1rem 0;
 
+      font-size: 1.5rem;
+      color: #8A8A8A;
+
+      div {
+        display: flex;
+        flex-direction: row;
+
+        margin-bottom: .5rem;
+
+        i,
+        p {
+          margin-right: .5rem;
+        }
+
+        &.create-field {
+        }
+
+        &.status-field {
+
+        }
+
+        &.people-field {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 2.5rem;
+
+            margin-right: .3rem;
+
+            border-radius: 50%;
+          }
+
+          button#add-user {
+            font-weight: bold;
+            font-family: 'SF Pro Display';
+
+            background: none;
+            border: none;
+
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .new {
+      width: 100%;
+      text-align: right;
+
+      #new-bill {
+        font-weight: bold;
+        color: var(--text-color);
+
+        background: none;
+        border: none;
+
+        font-family: 'SF Pro Display';
+
+        cursor: pointer;
+      }
     }
 
     section.content {
@@ -85,6 +150,7 @@
         
         img {
           border-radius: 50%;
+          width: 4.5rem;
         }
 
         thead {
@@ -128,6 +194,12 @@
                 p {
                   margin-left: .5rem;
                   font-weight: bold ;
+                }
+              }
+
+              &.had-to-pay {
+                img {
+                  width: 4rem;
                 }
               }
             }

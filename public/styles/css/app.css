@@ -72,21 +72,39 @@ body { font-family: 'SF Pro Display'; }
 
 .card-modal.active { opacity: 1; visibility: visible; }
 
-.card-modal .modal-content { width: 50%; height: 70%; background-color: var(--bg-color); border-radius: .5rem; padding: 3rem 2rem 1rem 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.card-modal .modal-content { width: 50%; height: 70%; background-color: var(--bg-color); border-radius: .5rem; padding: 3rem 4rem 1rem 4rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.card-modal .modal-content #close { width: 100%; text-align: right; }
+
+.card-modal .modal-content #close .close-modal { border: none; background: none; color: var(--app-bg-color); font-size: 2rem; cursor: pointer; -webkit-transition: color 1s; transition: color 1s; }
+
+.card-modal .modal-content #close .close-modal:hover, .card-modal .modal-content #close .close-modal:focus { color: #c84444c7; }
 
 .card-modal .modal-content section.header { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.card-modal .modal-content section.header h1 { color: var(--text-color); font-weight: bold; font-size: 2.6rem; }
+.card-modal .modal-content section.header h1 { color: var(--text-color); font-weight: bold; font-size: 4rem; }
 
-.card-modal .modal-content section.header .close-modal { border: none; background: none; position: relative; right: 0; top: 0; color: var(--app-bg-color); font-size: 2rem; cursor: pointer; -webkit-transition: color 1s; transition: color 1s; }
+.card-modal .modal-content section.status { width: 100%; margin: 1.5rem 0 1rem 0; font-size: 1.5rem; color: #8A8A8A; }
 
-.card-modal .modal-content section.header .close-modal:hover, .card-modal .modal-content section.header .close-modal:focus { color: #c84444c7; }
+.card-modal .modal-content section.status div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin-bottom: .5rem; }
+
+.card-modal .modal-content section.status div i, .card-modal .modal-content section.status div p { margin-right: .5rem; }
+
+.card-modal .modal-content section.status div.people-field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.card-modal .modal-content section.status div.people-field img { width: 2.5rem; margin-right: .3rem; border-radius: 50%; }
+
+.card-modal .modal-content section.status div.people-field button#add-user { font-weight: bold; font-family: 'SF Pro Display'; background: none; border: none; cursor: pointer; }
+
+.card-modal .modal-content .new { width: 100%; text-align: right; }
+
+.card-modal .modal-content .new #new-bill { font-weight: bold; color: var(--text-color); background: none; border: none; font-family: 'SF Pro Display'; cursor: pointer; }
 
 .card-modal .modal-content section.content { width: 100%; }
 
 .card-modal .modal-content section.content #data-table { width: 100%; border-spacing: 0 0.5rem; color: var(--bg-color); }
 
-.card-modal .modal-content section.content #data-table img { border-radius: 50%; }
+.card-modal .modal-content section.content #data-table img { border-radius: 50%; width: 4.5rem; }
 
 .card-modal .modal-content section.content #data-table thead tr th { color: #8A8A8A; font-size: 1.5rem; text-align: left; padding: .5rem; }
 
@@ -103,6 +121,8 @@ body { font-family: 'SF Pro Display'; }
 .card-modal .modal-content section.content #data-table tbody tr td.user { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .card-modal .modal-content section.content #data-table tbody tr td.user p { margin-left: .5rem; font-weight: bold; }
+
+.card-modal .modal-content section.content #data-table tbody tr td.had-to-pay img { width: 4rem; }
 
 body { background-color: var(--app-bg-color); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-transition: background 0.5s; transition: background 0.5s; }
 
