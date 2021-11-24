@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PóPaga: App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/payments.css" />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/d67355562c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link rel="icon" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="action-buttons-container">
+        <a href="/app"><i class="fas fa-th"></i></a>
+        <a href="/app"><i class="fas fa-credit-card"></i></a>
+      </div>
+    </nav>
+
+    <main id="container">
+      <header id="header">
+        <a id="nav-logo" href="/app"
+          >PóPaga <i class="fas fa-piggy-bank"></i
+        ></a>
+        <h1>Bem vindo, <%= user.username %>.</h1>   
+        <div class="user-container">
+          <img src="" alt="" />
+        </div>
+        <div id="themes-container">
+          <button id="light" class="theme-button" data-theme="light">
+            <i class="fas fa-sun" data-theme="light"></i>
+          </button>
+          <button id="dark" class="theme-button" data-theme="dark">
+            <i class="fas fa-moon" data-theme="dark"></i>
+          </button>
+        </div>
+  
+        <div id="logout-button-container">
+          <i id="logout" class="fas fa-sign-out-alt"></i>
+        </div>
+      </header>
+      <div class="content">
+        <section id="top">
+          <h1>Painel De Pagamento</h1>
+        </section>
+        <section id="bottom">
+
+        </section>
+      </div>
+    </main>
+
+    <script src="/scripts/theme.js"></script>
+    <script src="/scripts/logout.js"></script>
+  </body>
+</html>
