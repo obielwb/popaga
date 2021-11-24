@@ -6,15 +6,12 @@ const config = require('../config/auth');
 module.exports = (req, res, next) => {
   const session = req.cookies.session;
 
-  if (!session) {
-    res.locals.user = null;
-    return next();
-  }
+  if (!session) return res.redirect('/login');
 
   verify(session, config.secret, (error, decoded) => {
     if (error) {
-      res.locals.user = null;
-      return next();
+      res.cookie('session', '', { maxAge: 0 });
+      return res.redirect('/login');
     }
 
     const config = {
@@ -33,13 +30,13 @@ module.exports = (req, res, next) => {
 
           return next();
         } else {
-          res.locals.user = null;
-          return next();
+          res.cookie('session', '', { maxAge: 0 });
+          return res.redirect('/login');
         }
       })
       .catch(() => {
-        res.locals.user = null;
-        return next();
+        res.cookie('session', '', { maxAge: 0 });
+        return res.redirect('/login');
       });
   });
 };
