@@ -1,14 +1,35 @@
 <div class="card-modal active">
   <div class="modal-content"> 
+    <div id="close">
+      <i class="fas fa-times close-modal"></i>
+    </div>
     <section class="header">
       <h1>Jantar de Terça</h1>
-      <button class="close-modal">
-        <i class="fas fa-times"></i>
-      </button>
     </section>
     <section class="status">
-
+      <div class="create-field">
+        <i class="far fa-clock"></i>
+        <p>Create</p>
+      </div>
+      <div class="status-field">
+        <i class="fas fa-stream"></i>
+        <p>Status</p>
+      </div>
+      <div class="people-field">
+        <i class="fas fa-users"></i>
+        <p>People</p> 
+        <div class="people">
+          <img src="https://via.placeholder.com/45x45" alt="User Image">
+          <img src="https://via.placeholder.com/45x45" alt="User Image">
+        </div>
+        <button id="add-user">+</button>
+      </div>
     </section>
+    <div class="new">
+      <button id="new-bill">
+        + novo
+      </button>
+    </div>
     <section class="content">
       <table id="data-table">
         <thead>
