@@ -19,19 +19,73 @@ body {
     display: flex;
     flex-direction: column;
 
-    #content {
+    .content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: space-between;
 
-      padding: 5rem 0 0 5rem;
+      padding: 4rem 4rem 2rem 4rem;
 
       height: 90vh;
+
+      color: var(--text-color);
+
+      #top {
+        height: 30%;
+        width: 90%;
+        
+        h1 {
+          font-size: 2rem;
+          color: var(--title-color);
+        }
+
+        #bills {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 100%;
+
+          .bill {
+            margin-right: 1rem;
+            border-radius: .5rem;
+            
+            height: 70%;
+            width: 20%;
+
+            background: var(--bg-color);
+
+          }
+        }
+      }
+
+      #bottom {
+        background-color: var(--bg-color);
+        border-radius: 1rem;
+
+        height: 60%;
+        width: 90%;
+
+        padding: 1rem;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        div {
+          height: 90%;
+          width: 30%;
+
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 1500px) {
-  section {
+  h1 {
     font-size: 2.4rem !important;
   }
 }
